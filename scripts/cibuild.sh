@@ -4,4 +4,4 @@
 set -e
 
 bundle exec jekyll build
-bundle exec ruby script/htmlproof.rb
+bundle exec ruby scripts/htmlproof.rb
