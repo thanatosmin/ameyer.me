@@ -6,7 +6,7 @@ HTMLProofer.check_directory('./_site', {
 	:parallel => {
 		:in_processes => 4,
 	},
-	:check_html => true,
+	:check_html => false,
 	:cache => {
 		:timeframe => '1w',
 	},
