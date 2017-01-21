@@ -20,10 +20,10 @@ fi
 
 # Deploy to site
 
-lftp -c "set ftp:list-options -a;
-open '$AM_TOKEN'; lcd ./_site/; cd /;
-mirror --reverse --delete --ignore-time --verbose \
-       --exclude-glob piwik/ --exclude-glob primer/"
+#lftp -c "set ftp:list-options -a;
+#open '$AM_TOKEN'; lcd ./_site/; cd /;
+#mirror --reverse --delete --ignore-time --verbose \
+#       --exclude-glob piwik/ --exclude-glob primer/"
 
 
 # Push to github
