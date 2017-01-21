@@ -33,3 +33,4 @@ jekyll-archives:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
