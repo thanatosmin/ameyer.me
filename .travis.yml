@@ -8,6 +8,8 @@ addons:
 
 cache:
   bundler: true
+  directories:
+  - tmp/.htmlproofer # cache external link checks
 
 dist: trusty
 
@@ -33,11 +35,9 @@ install:
   - tar xvfz bibtex2html-1.98-linux.tar.gz
   - cp -v bibtex2html-1.98-linux/* ~/bin
   - rm -rf bibtex2html-1.98-linux bibtex2html-1.98-linux.tar.gz
-script:
-  - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+script: ./scripts/cibuild.sh
 after_success:
-  - bash _deploy.sh
+  - ./scripts/deploy.sh
 notifications:
   email:
     recipients:
