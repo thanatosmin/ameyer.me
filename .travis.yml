@@ -35,9 +35,9 @@ install:
   - tar xvfz bibtex2html-1.98-linux.tar.gz
   - cp -v bibtex2html-1.98-linux/* ~/bin
   - rm -rf bibtex2html-1.98-linux bibtex2html-1.98-linux.tar.gz
-script: ./scripts/cibuild.sh
+script: bash scripts/cibuild.sh
 after_success:
-  - ./scripts/deploy.sh
+  - bash scripts/deploy.sh
 notifications:
   email:
     recipients:
