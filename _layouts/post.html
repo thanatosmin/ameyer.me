@@ -10,8 +10,5 @@ layout: default
 
     <div class="post-tag">{% for tag in page.tags %}#<a href="{{ site.baseurl }}/tag/{{tag}}/">{{tag}}</a>&nbsp;&nbsp;{% endfor %}</div>
 
-
-{{ if page.img }} <img src="{{ page.img }}"> {{ endif }}
-
   {{ content }}
 </article>
