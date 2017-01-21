@@ -10,7 +10,7 @@ HTMLProofer.check_directory('./_site', {
 	:cache => {
 		:timeframe => '1w',
 	},
-	:url_ignore => ["*scholar\.google\.com*", "*linkedin\.com*", "*ng\.2330\.html"],
+	:url_ignore => [/scholar.google.com/, /linkedin.com/, /ng.2330.html/],
 	:typhoeus => {
 		:timeout => 15, # seconds
 	},
