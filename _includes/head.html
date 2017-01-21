@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta name="description" {% if page.title == "Home" %}
       content="{{ site.data.brume.description }}" {% else %}
-      content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" {% endif %}>
+      content="{{ page.content | strip_html | strip_newlines | truncate: 120 | xml_escape }}" {% endif %}>
 <meta name="author" content="{{ site.data.brume.author }}">
 
 <!-- Enable responsiveness on mobile devices-->
@@ -48,7 +48,7 @@
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="//ameyer.me/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<noscript><p><img src="//ameyer.me/piwik/piwik.php?idsite=1" style="border:0;" alt="Piwik tracker" /></p></noscript>
 <!-- End Piwik Code -->
 
 
