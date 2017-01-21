@@ -1,0 +1,38 @@
+language: ruby
+sudo: false
+
+cache:
+  bundler: true
+
+dist: trusty
+
+rvm:
+  - 2.4
+
+env:
+  global:
+   # AM_TOKEN=     (to push)
+   #- secure: "LwPGpn="
+
+before_install:
+  - mkdir ~/bin
+  - export PATH="~/bin:$PATH"
+  - gem install bundler
+
+install:
+  - bundle install --jobs=3 --retry=3
+  # bibtex2html
+  - wget --no-check-certificate http://www.lri.fr/\~filliatr/ftp/bibtex2html/bibtex2html-1.98-linux.tar.gz
+  - tar xvfz bibtex2html-1.98-linux.tar.gz
+  - cp -v bibtex2html-1.98-linux/* ~/bin
+  - rm -rf bibtex2html-1.98-linux bibtex2html-1.98-linux.tar.gz
+  - apt-get install lftp
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+after_success:
+  - bash _deploy.sh
+notifications:
+  email:
+    recipients:
+     - travis-builds@ameyer.me
