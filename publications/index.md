@@ -3,6 +3,15 @@ layout: page
 title: Publications
 ---
 
+## Forthcoming
+
+**Model-Driven Design of TAM Receptor Inhibitors Reveals the Logic of Family Member Specialization.** Edward J. Richards, Aaron S. Meyer.
+
+**Dynamic signaling activation heterogeneity drives lung cancer persistence to targeted therapies.** Simin Manole, Song Yi Bae, Aaron S. Meyer.
+
+**Dissecting FcγR Regulation Through a Multivalent Binding Model.** Ryan A. Robinett, Ning Guan, Aaron S. Meyer.
+
+
 {% bibtex /publications/_style /publications/pubs.bib %}
 
 
