@@ -63,7 +63,7 @@ MIT, Department of Biological Engineering, Cambridge, MA
 
 --------------------
 
-## Professional Service
+### Professional Service
 
 * Co-Chair, Association of Early Career Cancer Systems Biologists (2017 -- Present)
 * Graduate Research Fellowship Program Review Panelist, National Science Foundation, 2016
