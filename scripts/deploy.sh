@@ -28,7 +28,7 @@ fi
 
 lftp -c "set ftp:list-options -a;
 open '$AM_TOKEN'; lcd ./_site/; cd /;
-mirror --reverse --delete --ignore-time --verbose \
+mirror --reverse --delete --verbose \
        --exclude-glob piwik/ --exclude-glob primer/"
 
 
