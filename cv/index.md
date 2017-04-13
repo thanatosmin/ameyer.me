@@ -72,4 +72,4 @@ MIT, Department of Biological Engineering, Cambridge, MA
 * Coordinator, MIT Biological Engineering Graduate Student Board (2010 -- 2013)
 * Member, MIT Biological Engineering Retreat Organizing Committee (2010 -- 2012)
 
-<a href="/public/files/Meyer_CV.pdf"><i class="fa fa-file-pdf-o fa-3x"></i></a>
+<a href="https://thanatosmin.github.io/CV/Meyer_CV.pdf"><i class="fa fa-file-pdf-o fa-3x"></i></a>
