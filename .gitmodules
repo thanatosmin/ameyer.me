@@ -1,4 +1,4 @@
 [submodule "_lab_site"]
 	path = _lab_site
-	url = git@github.com:meyer-lab/asmlab.org.git
+	url = https://github.com/meyer-lab/asmlab.org.git
 	branch = master
