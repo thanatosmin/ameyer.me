@@ -22,3 +22,7 @@ All code is made available either through [my personal](https://github.com/thana
 ### Plasmids
 
 Plasmids are made publically available once sequence verified [through AddGene](https://www.addgene.org/Aaron_Meyer/).
+
+### Other
+
+- [Faculty application research statement](/public/files/Opensci-FacResearch.pdf)
