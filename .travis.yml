@@ -24,18 +24,18 @@ env:
    # GH_TOKEN=     (to push)
    - secure: "PYe6iUG6bVR0sENqB50GnP44BNeWSTLKdqmsf72dYOOVxsttdKgDEQldczKMaOKw2FUCnK3rU1F2Gcy2eZJSYtfT5LqueryOex329QozxMLR1qmRZF03aoxHt6yuauAoA6DX0eLE73dpUQj1k+CM3+voEBxPLZ92Aw/K/eoEb0C9K9oyJ1lw9AMoHeNrCY7jmhstBDlmLgR9w8e43TNHqJ2wHLmuHk85mkT6OIbt2HTx4zTj4233THQbH7ie/Iab89U1fLRFH4JOH465IJYvr9i+txD4ANDFhJ6XFqOMvYdw3n9Yxq0K6fulgI+WddgnnsmewNxDMJ0QwJoPJu4NZai8p/uRel2LK2Zb5jfCCHpA2yEYajqds6j72DcCHsr1bqI5U4s17qC6jUAbXM3XX5wNEhJsuV5m55MXcLGWGJne6KSZWNWRnKXoYQ6WaUmj6Lm3RYQWCxDbaX6BCLL3+mhTvrt0Ic3pPUzt4kecp8ImV9mEdLJ8KKv7Aaodk9c4kwVdWzgunh7VCilZfvTV3tMh0gmgpczcAYDMa9EeXOLeUu4O/MU8I02WFaURoIYMvd7s8HB9LadSRKlE3UyrPeYm2b/dCBThA6jLbocjUbgYp01oks8WrikHIMXeiGXzXAhFq8hn8vGKvGJFvBm+LMUAWC1FTW/Q3+F5+0cJmo0="
 
+bundler_args: --without development --jobs 3 --retry 3
+
 before_install:
   - mkdir ~/bin
   - export PATH="~/bin:$PATH"
-  - gem install bundler
+  - gem update bundler
 
 install:
-  - bundle install --jobs=3 --retry=3
   # bibtex2html
   - wget --no-check-certificate http://www.lri.fr/\~filliatr/ftp/bibtex2html/bibtex2html-1.98-linux.tar.gz
-  - tar xvfz bibtex2html-1.98-linux.tar.gz
-  - cp -v bibtex2html-1.98-linux/* ~/bin
-  - rm -rf bibtex2html-1.98-linux bibtex2html-1.98-linux.tar.gz
+  - tar xvfz bibtex2html-1.98-linux.tar.gz -C ~/bin
+  - rm -rf bibtex2html-1.98-linux.tar.gz
 script: bash scripts/cibuild.sh
 after_success: bash scripts/deploy.sh
 notifications:
