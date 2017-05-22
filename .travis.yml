@@ -30,8 +30,7 @@ before_install:
   - export PATH="$TRAVIS_BUILD_DIR/_lab_site/_bin:$PATH"
   - gem update bundler
 
-install:
-  - bundle install
+install: bundle install
 script:
   - cp -R ./_lab_site/publications ./
   - bundle exec jekyll build
