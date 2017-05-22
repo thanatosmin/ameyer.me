@@ -11,6 +11,7 @@ cache:
   bundler: true
   directories:
   - tmp/.htmlproofer # cache external link checks
+  - tmp/bibtex2html-1.98-linux.tar.gz # bibtex2html
 
 dist: trusty
 
@@ -34,9 +35,8 @@ before_install:
 install:
   - bundle install
   # bibtex2html
-  - wget --no-check-certificate http://www.lri.fr/\~filliatr/ftp/bibtex2html/bibtex2html-1.98-linux.tar.gz
-  - tar xvfz bibtex2html-1.98-linux.tar.gz -C ~/bin
-  - rm -rf bibtex2html-1.98-linux.tar.gz
+  - wget --no-check-certificate http://www.lri.fr/\~filliatr/ftp/bibtex2html/bibtex2html-1.98-linux.tar.gz -P tmp/ -nc
+  - tar xvfz tmp/bibtex2html-1.98-linux.tar.gz -C ~/bin
 script:
   - cp -R ./_lab_site/publications ./
   - bundle exec jekyll build

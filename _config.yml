@@ -1,11 +1,5 @@
-markdown: redcarpet
-highlighter: null
-
 url: "http://ameyer.me"
 baseurl:
-
-redcarpet:
-  extensions: [strikethrough, tables, footnotes, smart]
 
 sass:
   sass_dir: public/css
