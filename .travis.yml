@@ -17,7 +17,7 @@ dist: trusty
 rvm:
   - 2.4
 
-bundler_args: --without development --jobs 3 --retry 3 --path=${BUNDLE_PATH:-vendor/bundle}
+bundler_args: --jobs 3 --retry 3 --path=${BUNDLE_PATH:-vendor/bundle}
 
 env:
   global:
@@ -32,7 +32,7 @@ before_install:
   - gem update bundler
 
 install:
-  - bundle install --without development --jobs 3 --retry 3 --path=${BUNDLE_PATH:-vendor/bundle}
+  - bundle install
   # bibtex2html
   - wget --no-check-certificate http://www.lri.fr/\~filliatr/ftp/bibtex2html/bibtex2html-1.98-linux.tar.gz
   - tar xvfz bibtex2html-1.98-linux.tar.gz -C ~/bin
