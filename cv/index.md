@@ -15,17 +15,22 @@ B.S., Bioengineering, University of California, Los Angeles
 
 ### Research Experience
 
-<div class="span_2 right">2014 - Present</div>
-**Principal Investigator**  
-[Aaron Meyer](http://asmlab.org) lab  
+<div class="span_2 right">2014 -- Present</div>
+**Assistant Professor**  
+[Meyer](http://asmlab.org) lab  
+UCLA, Department of Bioengineering
+
+<div class="span_2 right">2014 -- 2017</div>
+**Principal Investigator & Research Fellow**  
+[Meyer](http://asmlab.org) lab  
 MIT, Koch Institute for Integrative Cancer Research
 
-<div class="span_2 right">2009 - 2014</div>
+<div class="span_2 right">2009 -- 2014</div>
 **Graduate Researcher**<br />
 [Douglas Lauffenburger](http://web.mit.edu/dallab/) & [Frank Gertler](https://biology.mit.edu/people/frank_gertler) labs  
 MIT, Department of Biological Engineering
 
-<div class="span_2 right">2006 - 2009</div>
+<div class="span_2 right">2006 -- 2009</div>
 **Undergraduate researcher**  
 [Daniel Kamei](http://kameilab.seas.ucla.edu) lab  
 UCLA, Department of Bioengineering
@@ -48,11 +53,11 @@ UCLA, Department of Bioengineering
 
 ### Teaching/Mentoring Experience
 
-<div class="span_2 right">2009 - Present</div>
+<div class="span_2 right">2009 -- Present</div>
 **Undergraduate Mentor**  
 MIT, Department of Biological Engineering, Cambridge, MA
 
-<div class="span_2 right">2015 - 2016</div>
+<div class="span_2 right">2015 -- 2016</div>
 **Faculty of the [Citizen Science Program](http://citizenscience.bard.edu)**  
 Bard College, Annandale-on-Hudson, NY
 
