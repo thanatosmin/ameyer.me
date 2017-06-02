@@ -15,12 +15,12 @@ B.S., Bioengineering, University of California, Los Angeles
 
 ### Research Experience
 
-<div class="span_2 right">2014 – Present</div>
+<!--<div class="span_2 right">2017 – Present</div>
 **Assistant Professor**  
 [Meyer](http://asmlab.org) lab  
-UCLA, Department of Bioengineering
+UCLA, Department of Bioengineering-->
 
-<div class="span_2 right">2014 – 2017</div>
+<div class="span_2 right">2014 – Present</div>
 **Principal Investigator & Research Fellow**  
 [Meyer](http://asmlab.org) lab  
 MIT, Koch Institute for Integrative Cancer Research
