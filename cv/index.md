@@ -26,7 +26,7 @@ UCLA, Department of Bioengineering
 MIT, Koch Institute for Integrative Cancer Research
 
 <div class="span_2 right">2009 – 2014</div>
-**Graduate Researcher**<br />
+**Graduate Researcher**  
 [Douglas Lauffenburger](http://web.mit.edu/dallab/) & [Frank Gertler](https://biology.mit.edu/people/frank_gertler) labs  
 MIT, Department of Biological Engineering
 
