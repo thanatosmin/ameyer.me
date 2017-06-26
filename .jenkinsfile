@@ -11,7 +11,7 @@ pipeline {
         sh 'git clean -ffdx'
         sh 'bundle install --path ~/.gem'
         sh 'bundle exec jekyll build'
-        sh 'sed -i -e "s/pubs_bib\.html//" _site/publications/index.html'
+        sh 'sed -i -e "s/pubs_bib\\.html//" _site/publications/index.html'
       }
     }
     stage('Test'){
