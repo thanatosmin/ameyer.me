@@ -1,4 +1,4 @@
-[submodule "_lab_site"]
-	path = _lab_site
+[submodule "_includes/lab_site"]
+	path = _includes/lab_site
 	url = https://github.com/meyer-lab/asmlab.org.git
-	branch = master
+	branch = gh-pages

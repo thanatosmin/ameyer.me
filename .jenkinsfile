@@ -1,0 +1,37 @@
+pipeline {
+  agent any
+  environment {
+    PATH = "/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/texlive/2017/bin/x86_64-darwin/:$HOME/.gem/bin"
+    LC_ALL = "en_US.UTF-8"
+  }
+  stages {
+    stage('Build') {
+      steps {
+        sh 'git submodule update --init'
+        sh 'git clean -ffdx'
+        sh 'bundle install --path ~/.gem'
+        sh 'bundle exec jekyll build'
+      }
+    }
+    stage('Test'){
+      steps {
+        sh 'bundle exec htmlproofer --check-html --http-status-ignore "999" --assume-extension ./_site'
+        }
+      }
+    stage('Deploy') {
+      when {
+        expression { env.BRANCH_NAME == 'master' }
+      }
+      steps {
+        sh 'lftp -c "set ftp:list-options -a; open ameyerme; lcd ./_site/; cd /; mirror --reverse --delete --verbose --exclude-glob piwik/ --exclude-glob primer/"'
+        sh 'cd _site; git init; git config user.name "Jenkins CI"'
+        sh 'cd _site; git config user.email "jenkins@asmlab.org"'
+        sh 'cd _site; git remote add upstream "git@github.com:thanatosmin/ameyer.me.git"'
+        sh 'cd _site; git fetch upstream; git reset upstream/gh-pages; touch .'
+        sh 'cd _site; git add -A .; git status'
+        sh 'cd _site; git commit -m "Latest site built on successful jenkins build $BUILD_ID auto-pushed to github"'
+        sh 'cd _site; git push -q upstream HEAD:gh-pages'
+      }
+    }
+  }
+}
