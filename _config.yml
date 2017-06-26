@@ -5,7 +5,7 @@ sass:
   sass_dir: public/css
   style: :compressed
 
-gems:
+plugins:
   - jekyll-archives
   - jekyll-sitemap
 
@@ -29,4 +29,3 @@ exclude:
   - Gemfile.lock
   - README.md
   - scripts
-  - tmp
