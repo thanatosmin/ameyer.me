@@ -17,7 +17,7 @@ It is my intention to make any materials beyond these available as well, so feel
 
 ### Code
 
-All code is made available either through [my personal](https://github.com/thanatosmin) or [my lab](https://github.com/meyer-lab)'s Github account.
+All code is made available either through [my personal](https://github.com/aarmey) or [my lab](https://github.com/meyer-lab)'s Github account.
 
 ### Plasmids
 
