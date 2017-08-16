@@ -24,7 +24,7 @@ pipeline {
         expression { env.BRANCH_NAME == 'master' }
       }
       steps {
-        sh 'lftp -c "set ftp:list-options -a; open ameyerme; lcd ./_site/; cd /; mirror -Rev"'
+        sh 'lftp -c "set ftp:list-options -a; open ameyerme; lcd ./_site/; cd /; mirror --ignore-time -Rev"'
         sh 'cd _site; git init; git config user.name "Jenkins CI"'
         sh 'cd _site; git config user.email "jenkins@asmlab.org"'
         sh 'cd _site; git remote add upstream "git@github.com:thanatosmin/ameyer.me.git"'
