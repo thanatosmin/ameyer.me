@@ -268,12 +268,12 @@ dl,
 /*============================================================================*/
 @media screen and (max-width: 767px) {
   .top-navbar {
-    height: 35px;
+    height: 50px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
 
     a {
-      padding: 5px 10px;
+      padding: 3px 7px;
       margin: 5px;
       border-radius: 0;
       border: 1px solid $contrast-color;
