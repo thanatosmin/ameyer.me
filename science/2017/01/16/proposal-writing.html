@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta information -->
+<meta charset="utf-8">
+<meta name="description" 
+      content="This past year came with a significant increase in the number and complexity of funding proposals I put together. The..." >
+<meta name="author" content="Aaron Meyer">
+
+<!-- Enable responsiveness on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<!-- title -->
+<title>An Approach (and Template) for Reproducible Proposal Writing &middot; Ameyer.me</title>
+
+<!-- icons -->
+<link rel="shortcut icon" href="/public/images/favicon.ico" />
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="/public/css/main.css">
+
+<!-- bigfoot -->
+<script type="text/javascript" src="/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/public/js/bigfoot.min.js"></script>
+<script type="text/javascript">
+    var bigfoot = $.bigfoot(
+    {
+        actionOriginalFN: "ignore",
+        positionContent: "true"
+    }
+    );
+</script>
+
+<!-- Google fonts -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic&subset=latin-ext">
+
+<!-- font Awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://transduc.seas.ucla.edu/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+
+<!-- feed links -->
+<link rel="alternate" href="/feed.xml" type="application/rss+xml" title="">
+
+  </head>
+  <body>
+    <div class="container azul">
+      <header class="top row gutters">
+        <div class="col span_2 center">
+          <a href="http://ameyer.me" id="logo" title="Ameyer.me"
+             style="background-image: url(/public/images/logo.png);"></a>
+        </div>
+        <nav class="col span_10 top-navbar">
+  
+  <a href="/" title="Home"
+     >Home</a>
+  
+  <a href="/cv/" title="Curriculum Vitae"
+     >Curriculum Vitae</a>
+  
+  <a href="/publications/" title="Publications"
+     >Publications</a>
+  
+  <a href="/opensci/" title="Open Science"
+     >Open Science</a>
+  
+</nav>
+
+      </header>
+
+      <article class="single row gutters">
+
+  <time class="published" datetime="2017-01-16">16 January 2017</time>
+
+  <h2>An Approach (and Template) for Reproducible Proposal Writing</h2>
+
+    <div class="post-tag">#<a href="/tag/careers/">careers</a>&nbsp;&nbsp;#<a href="/tag/science/">science</a>&nbsp;&nbsp;#<a href="/tag/writing/">writing</a>&nbsp;&nbsp;#<a href="/tag/latex/">latex</a>&nbsp;&nbsp;#<a href="/tag/github/">github</a>&nbsp;&nbsp;</div>
+
+  <p>This past year came with a significant increase in the number and complexity of funding proposals I put together. The process has been a bit of a learning experience, particularly in how important organization can be to larger writing projects. While I think the standard approach is to fight with Word, I’ve taken the opportunity to try and adopt some software tools (including Latex and Git) to make the process a bit more reproducible and straightforward. A few lessons I’ve taken away from the year follow below; if you would like to replicate the workflow I apply, please take a look at the <a href="https://github.com/thanatosmin/grant-template">template I start from on Github</a>.</p>
+
+<ul>
+  <li><em>Codify good practice.</em> When putting together large documents I find it challenging to maintain consistency. For example, I would like acronyms to be introduced once, subsequently used throughout, and included in the glossary. The <code class="highlighter-rouge">glossary</code> package can seamlessly handle this for me. I would like all citations to be of the <code class="highlighter-rouge">supercite</code> variety and so overload the <code class="highlighter-rouge">cite</code> command. Aims and tasks end up subtly edited throughout the process of writing and proofing, and so these phrases are defined in commands. Make the computer work for you.</li>
+  <li><em>Ensure final tweaking steps will be seamless.</em> Inevitably, a few tweaks will be necessary to ensure the Specific Aims page is, in fact, a page, or that a figure isn’t hanging off the end of a page split. The main place where I adjust my practice in order to accomplish this is wrapping each figure into a command. That way, when I need to move a figure down, it’s just a single line making the trip.</li>
+  <li><em>Use git as your track changes.</em> A versioning system allows you to concentrate only on the document before you. What I’ve found works for me is to make commits roughly once a day, or when I hand the document to anyone else for proofing/approval. That way, I can continue to work on a document while someone else is looking through it, and when they provide edits I can instantly jump back to the point they saw. While folks in biology are most used to a Word document with track changes<sup id="fnref:trackfoot"><a href="#fn:trackfoot" class="footnote">1</a></sup>, I tell people they can provide me comments however they find most convenient, and many are most comfortable scribbling on a hard copy.</li>
+  <li><em>Separate style and content.</em> A style file seems redundant since it all can just go in the preamble of a document but, at least for me, it helps to enforce that those are not settings I should be tweaking when trying to assemble the content.</li>
+  <li><em>Respect your readers by being boring.</em> If the purpose of your document is to convey information as efficiently as possible, eschew complications that do not directly serve that purpose. Those font ligatures and bright colors aren’t going to help your reader if it distracts them from learning what you want to tell them.</li>
+</ul>
+
+<p>Obviously, these tips won’t make you have high-quality science to talk about, but have helped me streamline the process of getting that material onto a page without errors.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:trackfoot">
+      <p>I also find track changes very distracting, so versioning being handled in a separate tool is helpful.&nbsp;<a href="#fnref:trackfoot" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+
+
+      <footer>
+        <p>
+          by Aaron Meyer <br /> me@ameyer.me <br /><br />
+          
+          <a href="http://www.twitter.com/aarmey"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/aarmey"><i class="fa fa-github-square fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/feed.xml"><i class="fa fa-rss fa-2x"></i></a>
+        </p>
+      </footer>
+    </div>
+
+  </body>
+</html>
+
+

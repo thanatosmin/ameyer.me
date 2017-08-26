@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta information -->
+<meta charset="utf-8">
+<meta name="description" 
+      content="The work from the final portion of my Ph.D. thesis is online today in Cell Systems, a brand new journal from Cell Pre..." >
+<meta name="author" content="Aaron Meyer">
+
+<!-- Enable responsiveness on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<!-- title -->
+<title>Author Post: On Why We Build Models &middot; Ameyer.me</title>
+
+<!-- icons -->
+<link rel="shortcut icon" href="/public/images/favicon.ico" />
+
+<!-- stylesheets -->
+<link rel="stylesheet" href="/public/css/main.css">
+
+<!-- bigfoot -->
+<script type="text/javascript" src="/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/public/js/bigfoot.min.js"></script>
+<script type="text/javascript">
+    var bigfoot = $.bigfoot(
+    {
+        actionOriginalFN: "ignore",
+        positionContent: "true"
+    }
+    );
+</script>
+
+<!-- Google fonts -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic&subset=latin-ext">
+
+<!-- font Awesome -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://transduc.seas.ucla.edu/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+
+<!-- feed links -->
+<link rel="alternate" href="/feed.xml" type="application/rss+xml" title="">
+
+  </head>
+  <body>
+    <div class="container azul">
+      <header class="top row gutters">
+        <div class="col span_2 center">
+          <a href="http://ameyer.me" id="logo" title="Ameyer.me"
+             style="background-image: url(/public/images/logo.png);"></a>
+        </div>
+        <nav class="col span_10 top-navbar">
+  
+  <a href="/" title="Home"
+     >Home</a>
+  
+  <a href="/cv/" title="Curriculum Vitae"
+     >Curriculum Vitae</a>
+  
+  <a href="/publications/" title="Publications"
+     >Publications</a>
+  
+  <a href="/opensci/" title="Open Science"
+     >Open Science</a>
+  
+</nav>
+
+      </header>
+
+      <article class="single row gutters">
+
+  <time class="published" datetime="2015-07-16">16 July 2015</time>
+
+  <h2>Author Post: On Why We Build Models</h2>
+
+    <div class="post-tag">#<a href="/tag/careers/">careers</a>&nbsp;&nbsp;#<a href="/tag/science/">science</a>&nbsp;&nbsp;#<a href="/tag/cancer/">cancer</a>&nbsp;&nbsp;</div>
+
+  <p>The work from the final portion of my Ph.D. thesis is <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00007-1">online today</a> in <a href="http://www.cell.com/cell-systems/home">Cell Systems</a>, a brand new journal from Cell Press. Though nascent, the journal has already published exciting studies on the <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00002-2">geospatial distribution of bacteria in cities</a>, <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00003-4">using CRISPR-Cas9 to rapidly engineer yeast metabolic pathways</a>, and <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00006-X">programming synthetic circuits in gut microbiota</a> <sup id="fnref:cellsys"><a href="#fn:cellsys" class="footnote">1</a></sup>.</p>
+
+<p>In it, we use differential equation modeling to understand how <a href="https://en.wikipedia.org/wiki/AXL_receptor_tyrosine_kinase">AXL</a> (and very likely the other TAM receptor tyrosine kinases) senses phosphatidylserine (PtdSer)-presenting debris, a long-understood core function of the family. This was by far the most challenging undertaking of my Ph.D.–from utilizing the computational techniques to carefully designing the experimental measurements at each stage. The experience has taught me an enormous amount about the purpose and power of systems biology<sup id="fnref:odefoot"><a href="#fn:odefoot" class="footnote">2</a></sup>.</p>
+
+<p><a href="http://elifesciences.org/content/4/e07158">Shou et. al.</a> very recently described it best:</p>
+
+<blockquote>
+  <p>When scientists want to explain some aspect of nature, they tend to make observations of the natural world or collect experimental data, and then extract regularities or patterns from these observations and data, possibly using some form of statistical analysis. Characterizing these regularities or patterns can help scientists to generate new hypotheses, but statistical correlations on their own do not constitute understanding. Rather, it is when a mechanistic explanation of the regularities or patterns is developed from underlying principles, while relying on as few assumptions as possible, that a theory is born. A scientific theory thus provides a unifying framework that can explain a large class of empirical data. A scientific theory is also capable of making predictions that can be tested experimentally. Moreover, a theory can be refined in the light of new experimental data, and then be used to make new predictions, which can also be tested: over time this cycle of prediction, testing and refinement should result in a more robust and quantitative theory. Thus, the union of empirical and quantitative theoretical work should be a hallmark of any scientific discipline.</p>
+</blockquote>
+
+<p>In a sense, kinetic rate equation models are fundamentally different from most data-driven approaches. These models of molecular systems make very few assumptions about underlying processes, meaning that we can not only learn from models that reproduce a behavior but often also from the ones that “break” and can’t fit the data.  Relying only on experimental results doesn’t shield you from assumptions; in biology, experimental designs often rely on the underlying assumption that any one component of an organism has a unimodal relationship to the phenotype we observe. This is in part because the most simple (and often only feasible) experiments in one’s empirical toolbox are knockdown and/or overexpression, along with qualitative biochemical analyses. Biological systems are complex and nonlinear in their behavior though, and this initial view can quickly break down. For certain scales, a kinetic model can, in essence, be used as a scientific theory. Developed from underlying principles of rate kinetics and explaining the data we observe with as few assumptions as possible, it provides a unified framework for communication and further testing of our current understanding.</p>
+
+<p>In the case of TAM receptors, manipulation by the addition or removal of ligand, receptor, or PtdSer has produced many observations. Some seemingly conflict with the previous mental model of particular factors being simply “activating” or “repressive.” The new theory/model that we propose, while being more complex, is maximally simple for the phenomena we wish to explain. With this new model, we can see how the previous mental model could be misleading, as complex, nonlinear relationships exist with respect to the timescale of one’s assay and factors such as PtdSer. That isn’t to say it is correct–<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">it will always be wrong</a>. In the near term, while we model only one receptor, AXL, the other TAM receptors MerTK and Tyro3 have critical roles both in normal physiology and cancer, and our understanding of how these receptors are similar or different is just beginning to be assembled. As TAM-targeted therapies are developed and evaluated <em>in vivo</em>, these models will help us understand how they work and develop even better therapies.</p>
+
+<p>We need better methods at every step of this type of modeling, from construction and parameterization to understanding predictions<sup id="fnref:toolfoot"><a href="#fn:toolfoot" class="footnote">3</a></sup>. Biology is complex, and mechanistic models such as these quickly become intractable on larger scales. Our study introduces the additional complexity of spatial scale, which makes each step of the process, as well as the corresponding experimental techniques, considerably more challenging. In the long term, I believe spatial organization of signaling will prove to be a critical component of understanding many cellular processes. We are going to need systems techniques to understand them.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:cellsys">
+      <p>I am incredibly excited by this journal’s creation. Systems biology has lacked a true “home” even as it has matured into an established field, and I am enthusiastic this will be it.&nbsp;<a href="#fnref:cellsys" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:odefoot">
+      <p>Ironically, I had to be convinced that such a project would be challenging enough to be interesting. After all, we learned about ODE modeling in undergraduate classes, it’s been applied for decades, and I would only be considering two proteins! Surely in the era of big data, a few rate parameters could be thrown together in a weekend and output some simulations of receptor activation. And rather than simulate a phenomena, why not just measure it experimentally?&nbsp;<a href="#fnref:odefoot" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:toolfoot">
+      <p>Of course there are huge efforts to develop better tools for these purposes, but these remain difficult problems. Notable promising directions are rule-based models (such as <a href="http://bionetgen.org/index.php/Main_Page">BioNetGen</a>) and brave attempts to try and accelerate Markov Chain Monte Carlo (e.g. <a href="http://people.sc.fsu.edu/~jburkardt/f_src/dream/dream.html">DREAM</a>). Truly rigorous modeling still remains a challenge even for the computationally adept however. It would be wonderful to have a rule-based framework that handled rigorous parameterization, spatial modeling through <a href="https://en.wikipedia.org/wiki/Finite_difference">finite differences</a>, compile-time <a href="https://en.wikipedia.org/wiki/Detailed_balance">detailed balance</a>, and <a href="https://en.wikipedia.org/wiki/Automatic_differentiation">automatic differentiation</a> (since all of these systems are stiff of course), but such a tool would be a considerable computational undertaking.&nbsp;<a href="#fnref:toolfoot" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</article>
+
+
+      <footer>
+        <p>
+          by Aaron Meyer <br /> me@ameyer.me <br /><br />
+          
+          <a href="http://www.twitter.com/aarmey"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://github.com/aarmey"><i class="fa fa-github-square fa-2x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="/feed.xml"><i class="fa fa-rss fa-2x"></i></a>
+        </p>
+      </footer>
+    </div>
+
+  </body>
+</html>
+
+

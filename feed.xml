@@ -1,27 +1,166 @@
----
-layout: ~
----
 <?xml version="1.0"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.data.brume.name }}</title>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}{{ site.baseurl }}/feed.xml" rel="self" type="application/rss+xml" />
-    <description>{{ site.data.brume.description }}</description>
+    <title>Ameyer.me</title>
+    <link>http://ameyer.me</link>
+    <atom:link href="http://ameyer.me/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Personal site for Aaron Meyer.</description>
     <language>en-us</language>
-    <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+    <pubDate>Sat, 26 Aug 2017 14:57:44 -0700</pubDate>
+    <lastBuildDate>Sat, 26 Aug 2017 14:57:44 -0700</lastBuildDate>
 
-    {% for post in site.posts limit: 10 %}
+    
       <item>
-        <title>{{ post.title }}</title>
-        <link>{{ site.url }}{{ site.baseurl }}{{ post.url }}</link>
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <author>{{ site.data.brume.email }} ({{ site.data.brume.author}})</author>
-        <description>{{ post.content | xml_escape }}</description>
-        <guid isPermaLink="true">{{ site.url }}{{ site.baseurl }}{{ post.url }}</guid>
+        <title>Linus Pauling on involvement in politics</title>
+        <link>http://ameyer.me/politics/2017/03/14/pauling-politics.html</link>
+        <pubDate>Tue, 14 Mar 2017 04:00:00 -0700</pubDate>
+        <author>me@ameyer.me (Aaron Meyer)</author>
+        <description>&lt;p&gt;I have to admit I didn’t know Linus Pauling’s second Nobel was for the Peace Prize. In addition to his scientific pursuits, Pauling helped bring about the treaty banning tests of atomic explosives in the atmosphere. Though six decades ago, it seems eerily relevant to discussion about scientist’s role in politics today:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pauling’s political stand in the last years of the Truman presidency seems mild enough now, a rather flamboyantly idealistic campaign against the cold war, against atomic weapons and the development of the hydrogen bomb. In those days of the rise of Joseph McCarthy and Richard Nixon, when the national anxieties reverberated into hysteria in Southern California, Pauling’s course took courage and principle. His politics had unpleasant consequences at the time. At the end of April 1952, Pauling was supposed to go to London to attend a meeting of the Royal Society on the structure of proteins, but at the last minute was refused a passport. Some claim that had he got to London, he would have seen the newest x-ray-diffraction pictures of DNA from Maurice Wilkins’s and Rosalind Franklin’s laboratories, and from them learned what he needed to solve the structure. When I asked Pauling about the political responsibilities of scientists, he laughed as if at the foolishness of his enemies. &lt;strong&gt;“I have contended that scientists—first that they have the responsibilities of ordinary citizens, but then that they also have a responsibility because of their understanding of science, and of those problems of society in which science is involved closely, to help their fellow citizens to understand, by explaining to them what their own understanding of these problems is. And I have contended that they have the duty also to express their own opinions—if they have opinions. Of course, just after 1945, there was a good response from scientists. But then in the United States, McCarthy came along and frightened the majority of scientists out of taking any action. And, of course, there’s been the really great effort made by the administration, by the powers in control, to convince scientists that they should stay out of things, you know.”&lt;/strong&gt; The brows contracted furiously and the swell of language deepened. “Year after year, I’ve been told I might know a lot about chemistry but that doesn’t mean that I know anything about world affairs or economics or social problems, so I should just keep my mouth shut. I have replied—well, first by saying”—he laughed again, enjoying himself—”that I refuse to take your advice, but second by saying that a lot of other people, the lawyers and politicians, are just as ignorant as I am about these matters, and yet no one tells them to keep their mouths shut. After Dean Acheson had been quoted in Harper’s magazine as saying that I might know a lot about biochemistry but I didn’t know anything about world affairs, and should keep my mouth shut—that there was no justification for me to make pronouncements about world affairs—I didn’t bother to say that I wasn’t a biochemist, but I wrote back saying that if Dean Acheson had studied biochemistry as much as I had studied world affair, then I would say we ought to listen to what he had to say about biochemistry.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The excerpt is from &lt;a href=&quot;https://www.amazon.com/Eighth-Day-Creation-Revolution-Commemorative/dp/0879694785&quot;&gt;The Eighth Day of Creation&lt;/a&gt;, a comprehensive history of molecular biology’s beginnings.&lt;/p&gt;
+</description>
+        <guid isPermaLink="true">http://ameyer.me/politics/2017/03/14/pauling-politics.html</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>An Approach (and Template) for Reproducible Proposal Writing</title>
+        <link>http://ameyer.me/science/2017/01/16/proposal-writing.html</link>
+        <pubDate>Mon, 16 Jan 2017 08:00:00 -0800</pubDate>
+        <author>me@ameyer.me (Aaron Meyer)</author>
+        <description>&lt;p&gt;This past year came with a significant increase in the number and complexity of funding proposals I put together. The process has been a bit of a learning experience, particularly in how important organization can be to larger writing projects. While I think the standard approach is to fight with Word, I’ve taken the opportunity to try and adopt some software tools (including Latex and Git) to make the process a bit more reproducible and straightforward. A few lessons I’ve taken away from the year follow below; if you would like to replicate the workflow I apply, please take a look at the &lt;a href=&quot;https://github.com/thanatosmin/grant-template&quot;&gt;template I start from on Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Codify good practice.&lt;/em&gt; When putting together large documents I find it challenging to maintain consistency. For example, I would like acronyms to be introduced once, subsequently used throughout, and included in the glossary. The &lt;code class=&quot;highlighter-rouge&quot;&gt;glossary&lt;/code&gt; package can seamlessly handle this for me. I would like all citations to be of the &lt;code class=&quot;highlighter-rouge&quot;&gt;supercite&lt;/code&gt; variety and so overload the &lt;code class=&quot;highlighter-rouge&quot;&gt;cite&lt;/code&gt; command. Aims and tasks end up subtly edited throughout the process of writing and proofing, and so these phrases are defined in commands. Make the computer work for you.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Ensure final tweaking steps will be seamless.&lt;/em&gt; Inevitably, a few tweaks will be necessary to ensure the Specific Aims page is, in fact, a page, or that a figure isn’t hanging off the end of a page split. The main place where I adjust my practice in order to accomplish this is wrapping each figure into a command. That way, when I need to move a figure down, it’s just a single line making the trip.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Use git as your track changes.&lt;/em&gt; A versioning system allows you to concentrate only on the document before you. What I’ve found works for me is to make commits roughly once a day, or when I hand the document to anyone else for proofing/approval. That way, I can continue to work on a document while someone else is looking through it, and when they provide edits I can instantly jump back to the point they saw. While folks in biology are most used to a Word document with track changes&lt;sup id=&quot;fnref:trackfoot&quot;&gt;&lt;a href=&quot;#fn:trackfoot&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, I tell people they can provide me comments however they find most convenient, and many are most comfortable scribbling on a hard copy.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Separate style and content.&lt;/em&gt; A style file seems redundant since it all can just go in the preamble of a document but, at least for me, it helps to enforce that those are not settings I should be tweaking when trying to assemble the content.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Respect your readers by being boring.&lt;/em&gt; If the purpose of your document is to convey information as efficiently as possible, eschew complications that do not directly serve that purpose. Those font ligatures and bright colors aren’t going to help your reader if it distracts them from learning what you want to tell them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Obviously, these tips won’t make you have high-quality science to talk about, but have helped me streamline the process of getting that material onto a page without errors.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:trackfoot&quot;&gt;
+      &lt;p&gt;I also find track changes very distracting, so versioning being handled in a separate tool is helpful.&amp;nbsp;&lt;a href=&quot;#fnref:trackfoot&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <guid isPermaLink="true">http://ameyer.me/science/2017/01/16/proposal-writing.html</guid>
+      </item>
+    
+      <item>
+        <title>Decoding cancer cells' molecular communication using systems biology</title>
+        <link>http://ameyer.me/science/2016/12/03/scilife-essay.html</link>
+        <pubDate>Sat, 03 Dec 2016 07:00:00 -0800</pubDate>
+        <author>me@ameyer.me (Aaron Meyer)</author>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;An essay I wrote for a contest. I didn’t win, but this serves as (I hope) a nice summary of the questions we’re trying to answer particularly for any TAM-interested folks.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Multicellular organisms require communication and coordination both within and between cells. Cellular information sharing occurs through a variety of components including cytokines, growth factors, and hormones, which diffuse across the cell membrane or use transmembrane carriers. These signals operate in concert, and so a relaxation of reductionism in the form of systems biology can more completely capture their effects. Receptor tyrosine kinases (RTKs) are a class of these receptors which transduce extracellular information to modulate and coordinate intracellular processes. Cancer is in part a breakdown of intercellular regulation, and cancer cells frequently utilize RTKs to drive many hallmarks of the disease.&lt;/p&gt;
+
+&lt;p&gt;Accordingly, targeting RTKs has been therapeutically effective in a subset of tumors. The ultimate benefit of these therapies, however, is limited by resistance. Resistance occurs through a panoply of mechanisms, including mutation of the drug target to block the effect of therapy, amplification of the drug target to overcome inhibition, and &lt;a href=&quot;http://cancerdiscovery.aacrjournals.org/cgi/doi/10.1158/2159-8290.CD-12-0103&quot;&gt;“bypass” switching to alternative pathways not targeted by therapy&lt;/a&gt;. In the case of RTK-targeted therapies, &lt;a href=&quot;http://stke.sciencemag.org/cgi/doi/10.1126/scisignal.2004652&quot;&gt;often non-targeted RTKs may become activated to provide bypass resistance&lt;/a&gt;. One RTK in particular, AXL, while not accompanied by oncogenic mutations, has &lt;a href=&quot;http://www.nature.com/ng/journal/v44/n8/full/ng.2330.html&quot;&gt;frequently been identified as a resistance mechanism to targeted therapies&lt;/a&gt;. AXL &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pubmed/20080645&quot;&gt;potently drives metastatic dissemination of cancer cells&lt;/a&gt; at the same time, and so its activation is especially dire. Despite its importance as identified through genetic studies, little was known about the signaling function of AXL. Therefore, as a graduate student in Douglas Lauffenburger and Frank Gertler’s laboratories at MIT, I became interested in defining how AXL signals, to identify when and where targeting the receptor might be effective.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/public/images/essay-fig.png&quot; alt=&quot;Information transmission through AXL.&quot; /&gt;
+Information transmission through AXL. &lt;em&gt;Left)&lt;/em&gt; Triple-negative breast carcinoma cells frequently co-express AXL and EGFR. Transactivation of AXL by EGFR &lt;a href=&quot;http://stke.sciencemag.org/cgi/doi/10.1126/scisignal.2004155&quot;&gt;serves to amplify a subset of pathways downstream of both RTKs&lt;/a&gt;. This amplification results in qualitatively distinct EGFR signaling and drives cell invasion. &lt;em&gt;Right)&lt;/em&gt; The activity of TAM (Tyro3, AXL, MerTK) receptors depends upon interaction of their ligands with phosphatidylserine. Signal is transduced from lipid to ligand and receptor by &lt;a href=&quot;http://linkinghub.elsevier.com/retrieve/pii/S2405471215000071&quot;&gt;constraining the diffusion of ligand-receptor complexes, leading to dimerization&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;RTKs frequently &lt;a href=&quot;http://www.pnas.org/cgi/doi/10.1073/pnas.0705158104&quot;&gt;act in concert&lt;/a&gt; to drive specific phenotypic outcomes. When cells develop resistance to RTK-targeted agents, it can involve co-activation of receptors, and inhibiting combinations of these receptors is then required to overcome resistance. However, the role of these combinations—where multiple receptors are simultaneously important to cancer cell survival—perplexed me. The combination must provide something not available through either receptor alone. We wondered whether RTK co-activation may play a role in redirecting cell response to extracellular growth factor cues. Examining the response of breast carcinoma cells to EGF, I found that EGFR transactivates AXL. Varying the amount of EGFR activation with and without AXL present showed that this serves to quantitatively amplify the activation of certain pathways, &lt;a href=&quot;http://stke.sciencemag.org/cgi/doi/10.1126/scisignal.2004155&quot;&gt;producing a qualitatively distinct signaling response&lt;/a&gt;. This pattern of activation potently promoted the migration response to EGF over direct EGFR signaling itself. Using a new experimental approach of chemically cross-linking receptors to one another and then quantifying the pairs of cross-linked receptors in parallel, I identified that diffusional proximity of receptor pairs was predictive of their cross-talk capacity. Thus, RTK co-activation not only can lead to therapeutic resistance but endows cells with novel phenotypic traits, and cross-talking receptors are closely localized. Through their communication, the sum of RTK activation was greater than the individual receptor parts.&lt;/p&gt;
+
+&lt;p&gt;But how was the activity of AXL itself regulated? RTKs are often, on a most basic level, growth factor concentration sensors. Taking advantage of this observation, RTK signaling is most commonly studied by removing growth factors from cell culture to reduce a receptor’s activity, reintroducing the growth factor after a period of time, then measuring the resulting dynamic responses. This basic experiment frequently does not work for AXL however; &lt;a href=&quot;http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;amp;id=25265470&amp;amp;retmode=ref&amp;amp;cmd=prlinks&quot;&gt;adding the AXL ligand Gas6 leads to no measurable phosphorylation response on its own&lt;/a&gt;. To explain this perplexing lack of response, I &lt;a href=&quot;http://linkinghub.elsevier.com/retrieve/pii/S2405471215000071&quot;&gt;built a mathematical model&lt;/a&gt; of the receptor’s binding processes and fit it to our experiments lacking the expected activation. From there, it was clear: ligand was bound to the receptor, but the receptor-ligand complexes had to be brought together more tightly somehow for activation. AXL’s ligand, Gas6, simultaneously binds to a lipid, phosphatidylserine (PS), which is normally found only inside cells but is exposed during processes such as apoptosis, T cell activation, and photoreceptor turnover. The importance of &lt;a href=&quot;http://www.jbc.org/cgi/doi/10.1074/jbc.272.47.29411&quot;&gt;PS for activating AXL has been recognized since 1997&lt;/a&gt;, almost as long as its ligand has been known, yet how the lipid functions to promote activation has remained elusive. In contrast to PS activating AXL through some conformational change transmitted through the ligand-receptor complex, our model pointed toward its role being to shepherd AXL-Gas6 complexes together. Indeed, by varying the amount of PS added to culture, we could see a biphasic response where very high concentrations of PS in fact inhibited AXL activation. As expected by the model, PS moieties served as a molecular corral for diffusing receptor-ligand complexes thus promoting activation of the receptor within limited spots on the cell surface. In a sense, the AXL-Gas6 complex itself is the receptor—for spots of PS presentation. To sense this important lipid complex, our cells have constructed this elegant, diffusion-driven sensor of ligand localization that is robust to changes in ligand concentration.&lt;/p&gt;
+
+&lt;p&gt;These studies provided a first quantitative analysis of how AXL functions within cells. Later studies have continued to elucidate the role of AXL in cancer including how and when it &lt;a href=&quot;http://cancerdiscovery.aacrjournals.org/cgi/doi/10.1158/2159-8290.CD-15-0933&quot;&gt;mediates resistance to targeted therapies&lt;/a&gt; in &lt;a href=&quot;http://linkinghub.elsevier.com/retrieve/pii/S1535610815000987&quot;&gt;other tumor types&lt;/a&gt;. AXL and the TAM receptor family to which it belongs have accrued considerable interest due to their &lt;a href=&quot;http://linkinghub.elsevier.com/retrieve/pii/S0092867407013529&quot;&gt;widespread roles in the immune system&lt;/a&gt;. The molecular features that drive their activation will help to understand where, how, and when these receptors are activated. In cancer, the &lt;a href=&quot;http://dx.doi.org/10.1016/j.cell.2016.03.029&quot;&gt;microenvironmental changes that lead to activation of AXL&lt;/a&gt; will allow us to identify the patients who will benefit from targeted therapies against the receptor.&lt;/p&gt;
+
+&lt;p&gt;More generally, this work shows the essential role systems-level studies will play uncovering the etiology of and therapeutic opportunities in complex diseases. In each case, focusing on a single manipulation or measurement would have prevented us from learning how these systems of molecular processes function. Strikingly, even a single receptor-ligand pair can pass information from the extracellular environment to a cell in a subtle and complex manner.  We will need the systems biology toolbox on even these relatively focused scales to decipher how molecular and cellular components function together to produce cells, tissues, and ourselves.&lt;/p&gt;
+</description>
+        <guid isPermaLink="true">http://ameyer.me/science/2016/12/03/scilife-essay.html</guid>
+      </item>
+    
+      <item>
+        <title>Author Post: On Why We Build Models</title>
+        <link>http://ameyer.me/data/2015/07/16/Gas6ms.html</link>
+        <pubDate>Thu, 16 Jul 2015 01:15:00 -0700</pubDate>
+        <author>me@ameyer.me (Aaron Meyer)</author>
+        <description>&lt;p&gt;The work from the final portion of my Ph.D. thesis is &lt;a href=&quot;http://www.cell.com/cell-systems/abstract/S2405-4712(15)00007-1&quot;&gt;online today&lt;/a&gt; in &lt;a href=&quot;http://www.cell.com/cell-systems/home&quot;&gt;Cell Systems&lt;/a&gt;, a brand new journal from Cell Press. Though nascent, the journal has already published exciting studies on the &lt;a href=&quot;http://www.cell.com/cell-systems/abstract/S2405-4712(15)00002-2&quot;&gt;geospatial distribution of bacteria in cities&lt;/a&gt;, &lt;a href=&quot;http://www.cell.com/cell-systems/abstract/S2405-4712(15)00003-4&quot;&gt;using CRISPR-Cas9 to rapidly engineer yeast metabolic pathways&lt;/a&gt;, and &lt;a href=&quot;http://www.cell.com/cell-systems/abstract/S2405-4712(15)00006-X&quot;&gt;programming synthetic circuits in gut microbiota&lt;/a&gt; &lt;sup id=&quot;fnref:cellsys&quot;&gt;&lt;a href=&quot;#fn:cellsys&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;In it, we use differential equation modeling to understand how &lt;a href=&quot;https://en.wikipedia.org/wiki/AXL_receptor_tyrosine_kinase&quot;&gt;AXL&lt;/a&gt; (and very likely the other TAM receptor tyrosine kinases) senses phosphatidylserine (PtdSer)-presenting debris, a long-understood core function of the family. This was by far the most challenging undertaking of my Ph.D.–from utilizing the computational techniques to carefully designing the experimental measurements at each stage. The experience has taught me an enormous amount about the purpose and power of systems biology&lt;sup id=&quot;fnref:odefoot&quot;&gt;&lt;a href=&quot;#fn:odefoot&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://elifesciences.org/content/4/e07158&quot;&gt;Shou et. al.&lt;/a&gt; very recently described it best:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When scientists want to explain some aspect of nature, they tend to make observations of the natural world or collect experimental data, and then extract regularities or patterns from these observations and data, possibly using some form of statistical analysis. Characterizing these regularities or patterns can help scientists to generate new hypotheses, but statistical correlations on their own do not constitute understanding. Rather, it is when a mechanistic explanation of the regularities or patterns is developed from underlying principles, while relying on as few assumptions as possible, that a theory is born. A scientific theory thus provides a unifying framework that can explain a large class of empirical data. A scientific theory is also capable of making predictions that can be tested experimentally. Moreover, a theory can be refined in the light of new experimental data, and then be used to make new predictions, which can also be tested: over time this cycle of prediction, testing and refinement should result in a more robust and quantitative theory. Thus, the union of empirical and quantitative theoretical work should be a hallmark of any scientific discipline.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In a sense, kinetic rate equation models are fundamentally different from most data-driven approaches. These models of molecular systems make very few assumptions about underlying processes, meaning that we can not only learn from models that reproduce a behavior but often also from the ones that “break” and can’t fit the data.  Relying only on experimental results doesn’t shield you from assumptions; in biology, experimental designs often rely on the underlying assumption that any one component of an organism has a unimodal relationship to the phenotype we observe. This is in part because the most simple (and often only feasible) experiments in one’s empirical toolbox are knockdown and/or overexpression, along with qualitative biochemical analyses. Biological systems are complex and nonlinear in their behavior though, and this initial view can quickly break down. For certain scales, a kinetic model can, in essence, be used as a scientific theory. Developed from underlying principles of rate kinetics and explaining the data we observe with as few assumptions as possible, it provides a unified framework for communication and further testing of our current understanding.&lt;/p&gt;
+
+&lt;p&gt;In the case of TAM receptors, manipulation by the addition or removal of ligand, receptor, or PtdSer has produced many observations. Some seemingly conflict with the previous mental model of particular factors being simply “activating” or “repressive.” The new theory/model that we propose, while being more complex, is maximally simple for the phenomena we wish to explain. With this new model, we can see how the previous mental model could be misleading, as complex, nonlinear relationships exist with respect to the timescale of one’s assay and factors such as PtdSer. That isn’t to say it is correct–&lt;a href=&quot;https://en.wikipedia.org/wiki/All_models_are_wrong&quot;&gt;it will always be wrong&lt;/a&gt;. In the near term, while we model only one receptor, AXL, the other TAM receptors MerTK and Tyro3 have critical roles both in normal physiology and cancer, and our understanding of how these receptors are similar or different is just beginning to be assembled. As TAM-targeted therapies are developed and evaluated &lt;em&gt;in vivo&lt;/em&gt;, these models will help us understand how they work and develop even better therapies.&lt;/p&gt;
+
+&lt;p&gt;We need better methods at every step of this type of modeling, from construction and parameterization to understanding predictions&lt;sup id=&quot;fnref:toolfoot&quot;&gt;&lt;a href=&quot;#fn:toolfoot&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. Biology is complex, and mechanistic models such as these quickly become intractable on larger scales. Our study introduces the additional complexity of spatial scale, which makes each step of the process, as well as the corresponding experimental techniques, considerably more challenging. In the long term, I believe spatial organization of signaling will prove to be a critical component of understanding many cellular processes. We are going to need systems techniques to understand them.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:cellsys&quot;&gt;
+      &lt;p&gt;I am incredibly excited by this journal’s creation. Systems biology has lacked a true “home” even as it has matured into an established field, and I am enthusiastic this will be it.&amp;nbsp;&lt;a href=&quot;#fnref:cellsys&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:odefoot&quot;&gt;
+      &lt;p&gt;Ironically, I had to be convinced that such a project would be challenging enough to be interesting. After all, we learned about ODE modeling in undergraduate classes, it’s been applied for decades, and I would only be considering two proteins! Surely in the era of big data, a few rate parameters could be thrown together in a weekend and output some simulations of receptor activation. And rather than simulate a phenomena, why not just measure it experimentally?&amp;nbsp;&lt;a href=&quot;#fnref:odefoot&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:toolfoot&quot;&gt;
+      &lt;p&gt;Of course there are huge efforts to develop better tools for these purposes, but these remain difficult problems. Notable promising directions are rule-based models (such as &lt;a href=&quot;http://bionetgen.org/index.php/Main_Page&quot;&gt;BioNetGen&lt;/a&gt;) and brave attempts to try and accelerate Markov Chain Monte Carlo (e.g. &lt;a href=&quot;http://people.sc.fsu.edu/~jburkardt/f_src/dream/dream.html&quot;&gt;DREAM&lt;/a&gt;). Truly rigorous modeling still remains a challenge even for the computationally adept however. It would be wonderful to have a rule-based framework that handled rigorous parameterization, spatial modeling through &lt;a href=&quot;https://en.wikipedia.org/wiki/Finite_difference&quot;&gt;finite differences&lt;/a&gt;, compile-time &lt;a href=&quot;https://en.wikipedia.org/wiki/Detailed_balance&quot;&gt;detailed balance&lt;/a&gt;, and &lt;a href=&quot;https://en.wikipedia.org/wiki/Automatic_differentiation&quot;&gt;automatic differentiation&lt;/a&gt; (since all of these systems are stiff of course), but such a tool would be a considerable computational undertaking.&amp;nbsp;&lt;a href=&quot;#fnref:toolfoot&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <guid isPermaLink="true">http://ameyer.me/data/2015/07/16/Gas6ms.html</guid>
+      </item>
+    
+      <item>
+        <title>Principal Components Explained Visually</title>
+        <link>http://ameyer.me/data/2015/02/19/PCA.html</link>
+        <pubDate>Thu, 19 Feb 2015 00:15:00 -0800</pubDate>
+        <author>me@ameyer.me (Aaron Meyer)</author>
+        <description>&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Principal_component_analysis&quot;&gt;Principal components analysis&lt;/a&gt; is an essential tool when working with multidimensional data, yet it can be difficult to develop an intuitive understanding of what the method is doing. &lt;a href=&quot;http://setosa.io/ev/principal-component-analysis/&quot;&gt;This tool&lt;/a&gt; from &lt;a href=&quot;https://twitter.com/vicapow&quot;&gt;Victor Powell&lt;/a&gt; really helps picture the process, as it lets you push and pull points around and immediately see the effect on the data output.&lt;/p&gt;
+</description>
+        <guid isPermaLink="true">http://ameyer.me/data/2015/02/19/PCA.html</guid>
+      </item>
+    
+      <item>
+        <title>The Bad Luck of Improper Data Interpretation</title>
+        <link>http://ameyer.me/science/2015/01/02/vogel.html</link>
+        <pubDate>Fri, 02 Jan 2015 04:32:00 -0800</pubDate>
+        <author>me@ameyer.me (Aaron Meyer)</author>
+        <description>&lt;p&gt;An &lt;a href=&quot;http://www.sciencemag.org/content/347/6217/78.full&quot;&gt;article&lt;/a&gt; and &lt;a href=&quot;http://www.sciencemag.org/content/347/6217/12.full&quot;&gt;news summary&lt;/a&gt; is out in &lt;a href=&quot;http://www.sciencemag.org&quot;&gt;Science&lt;/a&gt; this week with a bold claim: that two-thirds of all cancers are due to baseline mutagenesis intrinsic to cell division, and not environmental factors or genetics. This is based on observed correlation between the number of stem cell divisions and incidence of cancer in various tissues. Certainly, such a conclusion would have immense consequences—it would emphasize treatment strategies over those of prevention, and refocus efforts away from understanding environmental toxins. Sadly, this conclusion is based on a frightening variety of errors in interpretation and basic math.&lt;/p&gt;
+
+&lt;p&gt;Most specifically, the two-thirds figure comes from the correlation coefficient between stem cell divisions and cancer incidence. While it is the case that the former explains 65% of the variation in cancer incidence between tissues, &lt;em&gt;this does not translate to a percentage of cancer cases&lt;/em&gt;. This data is plotted on a log-log axis, and so distance along the plot is not linear. As the cancers with clear environmental factors are more common, the 65% claim is surely much lower.&lt;/p&gt;
+
+&lt;p&gt;Second, while this correlation might explain variation between tissues, it does not suggest the source of mutagenesis. Any factor that had similar effects throughout all tissues would vary this plot on the y-axis but have no effect on the correlation. Notably, as the data is plotted on a log axis, even for tissue-specific toxins many fold changes in the incidences of these cancers would &lt;em&gt;still&lt;/em&gt; have no effect on the conclusions of this study.&lt;/p&gt;
+
+&lt;p&gt;Additional failures of interpretation in this study suggest little understanding of the data analysis involved. For example, k-means clustering a single variable lends little insight, and with outliers on either end is sure to form two groups with separation near the center of the range. This provides no evidence of there being two “classes” of cancer.&lt;/p&gt;
+
+&lt;p&gt;This article seems to be the product of lax peer review and pressure to over-interpret data to boost public interest. Both of these provide short-term gain to those involved but in the long run corrupt the scientific literature and erode public trust in science. Don’t do it!&lt;/p&gt;
+</description>
+        <guid isPermaLink="true">http://ameyer.me/science/2015/01/02/vogel.html</guid>
+      </item>
+    
+      <item>
+        <title>Early Independence</title>
+        <link>http://ameyer.me/science/2014/10/06/EIA.html</link>
+        <pubDate>Mon, 06 Oct 2014 06:32:00 -0700</pubDate>
+        <author>me@ameyer.me (Aaron Meyer)</author>
+        <description>&lt;p&gt;Science doesn’t simply happen when money is spent; it requires immense effort, creative ideas, and dedicated time from well-trained scientists. Many factors can threaten these other requirements, such as funding instability and the aging of scientists. The average age at which an investigator receives their first R01, the mainstay grant of biomedical research, &lt;a href=&quot;http://scientopia.org/blogs/drugmonkey/2012/02/14/updating-the-age-of-first-nih-r01-award-trends-flatlining/&quot;&gt;is now well into the mid-40’s&lt;/a&gt;. This drives many of the most talented individuals out of biomedical research, and curtails the benefit we as investors in biomedical research derive from those who remain, by limiting their ability to perform independent science during some of their most creative years.&lt;/p&gt;
+
+&lt;p&gt;To begin to address this one problem, the NIH has begun an experiment, the &lt;a href=&quot;http://commonfund.nih.gov/earlyindependence/index&quot;&gt;Early Independence Award&lt;/a&gt;, funding young investigators immediately after their Ph.D. so that they may undertake their own research independently. I’m excited to be officially joining this experiment, and hope you’ll see exciting work from the &lt;a href=&quot;http://asmlab.org&quot;&gt;Meyer lab&lt;/a&gt; at MIT soon.&lt;/p&gt;
+</description>
+        <guid isPermaLink="true">http://ameyer.me/science/2014/10/06/EIA.html</guid>
+      </item>
+    
 
   </channel>
 </rss>
