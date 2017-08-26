@@ -29,6 +29,7 @@ pipeline {
         sh 'cd _site; git config user.email "jenkins@asmlab.org"'
         sh 'cd _site; git remote add upstream "git@github.com:thanatosmin/ameyer.me.git"'
         sh 'cd _site; git fetch upstream; git reset upstream/built-site; touch .'
+        sh 'echo "ameyer.me" > _site/CNAME'
         sh 'cd _site; git add -A .; git status'
         sh 'cd _site; git commit -m "Jenkins $BUILD_ID auto-pushed"'
         sh 'cd _site; git push -q upstream HEAD:built-site'
