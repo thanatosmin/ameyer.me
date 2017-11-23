@@ -7,10 +7,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'git submodule update --init'
         sh 'git clean -ffdx'
-        sh 'git submodule update --recursive --remote'
         sh 'bundle install --path ~/.gem'
+        sh 'cd publications; wget https://asmlab.org/publications/pubs_bib.html'
+        sh 'cd publications; wget https://asmlab.org/publications/pub_build.html'
         sh 'bundle exec jekyll build'
       }
     }
