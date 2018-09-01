@@ -18,7 +18,7 @@ B.S., Bioengineering, University of California, Los Angeles
 <div class="span_2 right">2017 – Present</div>
 **Assistant Professor**  
 [Meyer](http://asmlab.org) lab  
-UCLA, Department of Bioengineering
+UCLA, [Department of Bioengineering](https://www.bioeng.ucla.edu)
 
 <div class="span_2 right">2014 – 2017</div>
 **Principal Investigator & Research Fellow**  
@@ -33,7 +33,7 @@ MIT, Department of Biological Engineering
 <div class="span_2 right">2006 – 2009</div>
 **Undergraduate researcher**  
 [Daniel Kamei](http://kameilab.seas.ucla.edu) lab  
-UCLA, Department of Bioengineering
+UCLA, [Department of Bioengineering](https://www.bioeng.ucla.edu)
 
 --------------------
 
