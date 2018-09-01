@@ -18,7 +18,7 @@ B.S., Bioengineering, University of California, Los Angeles
 <div class="span_2 right">2017 – Present</div>
 **Assistant Professor**  
 [Meyer](http://asmlab.org) lab  
-UCLA, Department of Bioengineering
+UCLA, [Department of Bioengineering](https://www.bioeng.ucla.edu)
 
 <div class="span_2 right">2014 – 2017</div>
 **Principal Investigator & Research Fellow**  
@@ -33,7 +33,7 @@ MIT, Department of Biological Engineering
 <div class="span_2 right">2006 – 2009</div>
 **Undergraduate researcher**  
 [Daniel Kamei](http://kameilab.seas.ucla.edu) lab  
-UCLA, Department of Bioengineering
+UCLA, [Department of Bioengineering](https://www.bioeng.ucla.edu)
 
 --------------------
 
@@ -51,20 +51,26 @@ UCLA, Department of Bioengineering
 
 --------------------
 
-### Teaching/Mentoring Experience
+### Teaching Experience
 
-<div class="span_2 right">2009 – Present</div>
-**Undergraduate Mentor**  
-MIT, Department of Biological Engineering, Cambridge, MA
+<div class="span_2 right">2018 – Present</div>
+**Instructor**  
+[BE 167L: Bioengineering Lab](https://github.com/aarmey/167L-materials)  
+UCLA, [Department of Bioengineering](https://www.bioeng.ucla.edu)
+
+<div class="span_2 right">2018 – Present</div>
+**Instructor**  
+[BE 188: Machine learning & data-driven modeling in bioengineering](https://aarmey.github.io/ml-for-bioe/)  
+UCLA, [Department of Bioengineering](https://www.bioeng.ucla.edu)
 
 <div class="span_2 right">2015 – 2016</div>
 **Faculty of the [Citizen Science Program](http://citizenscience.bard.edu)**  
-Bard College, Annandale-on-Hudson, NY
+Bard College
 
 <div class="span_2 right">Fall 2010</div>
 **Teaching Assistant**  
 20.110: Thermodynamics of Biomolecular Systems  
-MIT, Department of Biological Engineering, Cambridge, MA
+MIT, Department of Biological Engineering
 
 --------------------
 
