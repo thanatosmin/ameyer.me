@@ -18,15 +18,10 @@
 <link rel="stylesheet" href="{{site.baseurl}}/public/css/main.css">
 
 <!-- bigfoot -->
-<script type="text/javascript" src="/public/js/jquery.min.js"></script>
-<script type="text/javascript" src="/public/js/bigfoot.min.js"></script>
+<script type="text/javascript" src="/public/js/barefoot.min.js"></script>
 <script type="text/javascript">
-    var bigfoot = $.bigfoot(
-    {
-        actionOriginalFN: "ignore",
-        positionContent: "true"
-    }
-    );
+    lf = new BareFoot();
+    lf.init();
 </script>
 
 <!-- Google fonts -->
