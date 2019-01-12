@@ -1,0 +1,13 @@
+lang: ruby
+before_install:
+  - bundle install
+  - cd publications; wget https://asmlab.org/publications/pubs_bib.html
+  - cd publications; wget https://asmlab.org/publications/pub_build.html
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer --check-html --http-status-ignore "999,400" --assume-extension ./_site
+after_success:
+  - .travis/push.sh
+env:
+  global:
+    secure: hZJlqgOzA2zIUJSWIka0PylqNaTkfHq+kS48RrHmocrK0vLyCW7ECWrzez2f2RVdTNzPi0b+yJq2uCbFfWjImZqg+XY1I75/CVVdSYMk7PJkYZ/iBDixMYY8CAkRRd5yZft9uZAdZzR4KLCPN18n7qfISv/M9VA8989NKcVyiEU=
