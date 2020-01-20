@@ -18,7 +18,7 @@ B.S., Bioengineering, University of California, Los Angeles
 <div class="span_2 right">2017 – Present</div>
 **Assistant Professor**  
 [Meyer](http://asmlab.org) lab  
-UCLA, [Department of Bioengineering](https://www.bioeng.ucla.edu)
+UCLA, [Department of Bioengineering](https://www.bioeng.ucla.edu), [Bioinformatics IDP](https://bioinformatics.ucla.edu), [QCBio](https://qcb.ucla.edu)
 
 <div class="span_2 right">2014 – 2017</div>
 **Principal Investigator & Research Fellow**  
