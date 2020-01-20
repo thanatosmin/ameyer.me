@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2700 1950" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-225,-410.193)">
+        <path d="M1350,450L2850,450L2850,2100L1350,450Z" style="fill:rgb(169,255,184);fill-opacity:0.24;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-225,-410.193)">
+        <path d="M600,756L600,2100L2210,2100L600,756Z" style="fill:rgb(255,1,1);fill-opacity:0.26;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-225,-410.193)">
+        <path d="M600,761L2210,2100L2850,2100L1350,450L600,450L600,761Z" style="fill:rgb(225,225,225);"/>
+    </g>
+    <g transform="matrix(0.464286,0,0,0.5,-878.571,-710.193)">
+        <g transform="matrix(2.15385,-0,-0,2,1892.31,1420.39)">
+            <path d="M400,89.807L375,39.807L350,89.807C362.5,77.307 387.5,77.307 400,89.807Z"/>
+            <path d="M2575,1664.81L2625,1689.81L2575,1714.81C2587.5,1702.31 2587.5,1677.31 2575,1664.81Z"/>
+            <path d="M375,79.807L375,1689.81L2585,1689.81" style="fill:none;stroke:black;stroke-width:16.67px;"/>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,60.9482,-422.322)">
+        <text x="719.63px" y="2316.73px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Predictive Performance / Flexibility</text>
+    </g>
+    <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,-200.947,1614.67)">
+        <text x="304.225px" y="295.357px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Explainability / Interpretability</text>
+    </g>
+    <g transform="matrix(6.12323e-17,-1,1,6.12323e-17,-85.2614,1571.77)">
+        <text x="304.225px" y="295.357px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Extrapolation Performance</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-927.117,-557.371)">
+        <text x="1077.96px" y="650.865px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">High</text>
+    </g>
+    <g transform="matrix(1,0,0,1,1166.03,1167.63)">
+        <text x="1077.96px" y="650.865px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">High</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-852.117,1132.89)">
+        <text x="1077.96px" y="650.865px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Low</text>
+    </g>
+    <g transform="matrix(1,0,0,1,99.8367,-97.7831)">
+        <text x="1546.79px" y="1439.43px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">SVM/SVR</text>
+    </g>
+    <g transform="matrix(1,0,0,1,113.804,-18.7569)">
+        <text x="1206.43px" y="1060.41px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Linear SVMs</text>
+    </g>
+    <g transform="matrix(1,0,0,1,55.0418,66.0971)">
+        <text x="1288.95px" y="600.114px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">HMMs</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-54.1828,-233.564)">
+        <text x="867.794px" y="722.455px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">PLSR</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-275.049,-97.7636)">
+        <text x="1094.34px" y="342.173px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">NLLS</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-412.184,-1405.17)">
+        <text x="858.558px" y="1499.62px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">OLS</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-938.337,-1610.59)">
+        <text x="1716.2px" y="1705.03px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">ODEs</text>
+    </g>
+    <g transform="matrix(1,0,0,1,61.6356,-1658.77)">
+        <text x="1005.91px" y="1807.81px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Decision</text>
+        <text x="1055.25px" y="1885.27px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">T<tspan x="1098.28px 1123.26px " y="1885.27px 1885.27px ">re</tspan>es</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-274.184,-150.691)">
+        <text x="2161.54px" y="1732.74px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Boosted</text>
+        <text x="2234.57px" y="1810.19px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">DT<tspan x="2326.23px " y="1810.19px ">s</tspan></text>
+    </g>
+    <g transform="matrix(1,0,0,1,184.223,743.631)">
+        <text x="1984.88px" y="699.863px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">RNNs</text>
+    </g>
+    <g transform="matrix(1,0,0,1,44.6056,331.027)">
+        <text x="2316.54px" y="1251.02px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Neural</text>
+        <text x="2270.73px" y="1328.48px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Networks</text>
+    </g>
+    <g transform="matrix(0.233486,0,0,1,208.377,-846.165)">
+        <rect x="675" y="1050" width="75" height="150" style="fill:white;fill-opacity:0.55;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,72.7863,102.847)">
+        <text x="223.973px" y="164.562px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">PCA</text>
+        <text x="192.772px" y="242.016px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">NNMF</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-240.087,-247.394)">
+        <text x="810.64px" y="1412.2px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">W<tspan x="880.074px 905.049px " y="1412.2px 1412.2px ">ro</tspan>ng Model</text>
+    </g>
+    <g transform="matrix(1,0,0,1,900.481,-1168.71)">
+        <text x="810.64px" y="1412.2px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:75px;">Fame and Fortune</text>
+    </g>
+</svg>
