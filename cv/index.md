@@ -76,9 +76,9 @@ MIT, Department of Biological Engineering
 
 ### Professional Service
 
-* Co-Chair, Association of Early Career Cancer Systems Biologists (2017 – Present)
+* Co-Chair, Association of Cancer Systems Biologists (2017 – Present)
 * Graduate Research Fellowship Program Review Panelist, National Science Foundation, 2016
-* Meeting Organizer & Member, Association of Early Career Cancer Systems Biologists (2015 – 2016)
+* Meeting Organizer & Member, Association of Cancer Systems Biologists (2015 – 2016)
 * Member, Biomedical Engineering Society (2010 – Present)
 * Coordinator, MIT Biological Engineering Graduate Student Board (2010 – 2013)
 * Member, MIT Biological Engineering Retreat Organizing Committee (2010 – 2012)
