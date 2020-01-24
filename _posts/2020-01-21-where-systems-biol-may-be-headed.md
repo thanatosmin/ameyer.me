@@ -14,11 +14,11 @@ Last year in our machine learning/data analysis class, we had a bit of extra tim
 
 $$ f(x, \beta) $$
 
-Parameterize it with some judge of value:
+parameterize it with some judge of value:
 
 $$ \arg\max_{\beta} \textrm{Value}(f(x, \beta)) $$
 
-and are left with (hopefully) useful properties:
+and are left with a function having (hopefully) useful properties:
 
 $$ f(x, \hat{\beta}) $$
 
