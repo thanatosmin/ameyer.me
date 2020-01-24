@@ -6,8 +6,8 @@
     <atom:link href="http://ameyer.me/feed.xml" rel="self" type="application/rss+xml" />
     <description>Personal site for Aaron Meyer.</description>
     <language>en-us</language>
-    <pubDate>Fri, 24 Jan 2020 07:42:21 -0800</pubDate>
-    <lastBuildDate>Fri, 24 Jan 2020 07:42:21 -0800</lastBuildDate>
+    <pubDate>Fri, 24 Jan 2020 07:43:22 -0800</pubDate>
+    <lastBuildDate>Fri, 24 Jan 2020 07:43:22 -0800</lastBuildDate>
 
     
       <item>
@@ -27,7 +27,7 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x, \hat{\beta})&lt;/script&gt;
 
-&lt;p&gt;Modeling provides benefits beyond prediction, including hypothesis testing, communication, interpretation, and visualization. It is with these competing goals in mind that we can roughly organize the various methods in our toolbox:&lt;/p&gt;
+&lt;p&gt;Modeling provides benefits beyond prediction, including hypothesis testing, communication, interpretation, and visualization. With these competing goals in mind we roughly organized the various methods in our toolbox:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/images/models-plot.svg&quot; alt=&quot;Our toolkit of models.&quot; /&gt;&lt;/p&gt;
 
