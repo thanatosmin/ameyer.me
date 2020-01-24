@@ -6,8 +6,8 @@
     <atom:link href="http://ameyer.me/feed.xml" rel="self" type="application/rss+xml" />
     <description>Personal site for Aaron Meyer.</description>
     <language>en-us</language>
-    <pubDate>Fri, 24 Jan 2020 07:34:59 -0800</pubDate>
-    <lastBuildDate>Fri, 24 Jan 2020 07:34:59 -0800</lastBuildDate>
+    <pubDate>Fri, 24 Jan 2020 07:42:21 -0800</pubDate>
+    <lastBuildDate>Fri, 24 Jan 2020 07:42:21 -0800</lastBuildDate>
 
     
       <item>
@@ -19,11 +19,11 @@
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x, \beta)&lt;/script&gt;
 
-&lt;p&gt;Parameterize it with some judge of value:&lt;/p&gt;
+&lt;p&gt;parameterize it with some judge of value:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;\arg\max_{\beta} \textrm{Value}(f(x, \beta))&lt;/script&gt;
 
-&lt;p&gt;and are left with (hopefully) useful properties:&lt;/p&gt;
+&lt;p&gt;and are left with a function having (hopefully) useful properties:&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;f(x, \hat{\beta})&lt;/script&gt;
 
