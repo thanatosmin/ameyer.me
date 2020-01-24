@@ -7,7 +7,6 @@ categories:
 tags:
 - science
 - modeling
-- systems biology
 - data
 ---
 
