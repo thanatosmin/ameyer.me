@@ -24,7 +24,7 @@ $$ f(x, \hat{\beta}) $$
 
 Nearly any modeling structure provides benefits beyond prediction, including hypothesis testing, communication, interpretation, and visualization. It is with these competing goals in mind that we can roughly organize the various methods in our toolbox:
 
-![Our toolkit of models.](/public/images/models-plot.svg)
+![Our toolkit of models.](/public/images/models-plot.svg){width=50%}
 
 This helps to identify a few features of the landscape. First, our choices sit along some front of a tradeoff between explainability/interpretability and prediction performance/flexibility. This is not a new idea—much has been written about this tradeoff.
 
