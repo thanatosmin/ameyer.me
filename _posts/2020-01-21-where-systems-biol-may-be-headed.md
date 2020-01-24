@@ -22,7 +22,7 @@ and are left with a function having (hopefully) useful properties:
 
 $$ f(x, \hat{\beta}) $$
 
-Modeling provides benefits beyond prediction, including hypothesis testing, communication, interpretation, and visualization. It is with these competing goals in mind that we can roughly organize the various methods in our toolbox:
+Modeling provides benefits beyond prediction, including hypothesis testing, communication, interpretation, and visualization. With these competing goals in mind we roughly organized the various methods in our toolbox:
 
 ![Our toolkit of models.](/public/images/models-plot.svg)
 
