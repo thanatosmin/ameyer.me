@@ -117,15 +117,15 @@
     <div class="col span_12">
       <p>Last year in our machine learning/data analysis class, we had a bit of extra time to take a step back and return why we were there in the first place. Regardless of the method, machine learning provides us a toolbox of functions with varying amounts of flexibility and rigidness. By applying a method, we get a space of functions:</p>
 
-<script type="math/tex; mode=display">f(x, \beta)</script>
+\[f(x, \beta)\]
 
 <p>parameterize it with some judge of value:</p>
 
-<script type="math/tex; mode=display">\arg\max_{\beta} \textrm{Value}(f(x, \beta))</script>
+\[\arg\max_{\beta} \textrm{Value}(f(x, \beta))\]
 
 <p>and are left with a function having (hopefully) useful properties:</p>
 
-<script type="math/tex; mode=display">f(x, \hat{\beta})</script>
+\[f(x, \hat{\beta})\]
 
 <p>Modeling provides benefits beyond prediction, including hypothesis testing, communication, interpretation, and visualization. With these competing goals in mind we roughly organized the various methods in our toolbox:</p>
 
@@ -135,7 +135,7 @@
 
 <p>Before looking ahead, it is helpful to recognize some of the developments that have made it possible to move out in the direction of prediction/flexibility. Namely, the continued march of computational performance has worked alongside computational tools to enable flexibly-defined, high-parameter models. This includes a resurgence in <a href="http://tensorly.org/stable/index.html">autodifferentiation tools</a>, <a href="https://www.tensorflow.org">parallel/vectorized evaluation</a>, and <a href="https://mc-stan.org">probabilistic languages</a> to coordinate it all.</p>
 
-<p>However, while very high parameter models<sup id="fnref:deep"><a href="#fn:deep" class="footnote">1</a></sup> have given us accurate predictions, especially with ever-growing training data, these models are poor at extrapolation and interpretation. These two properties are <em>especially</em> critical to understanding biological systems; measurements are essentially always data starved, and the complexities of biological systems are such that even our highest-throughput experiments do not comprehensively sample every possible intervention we could make<sup id="fnref:invivo"><a href="#fn:invivo" class="footnote">2</a></sup>. In other words, we can take lots of pictures of stop signs to teach a model to identify stop signs, but we almost always build models of cells to predict things we can’t or haven’t ever measured yet. We have to be able to see into the uncharted territory. Can your model identify stop signs if it had never seen one before?</p>
+<p>However, while very high parameter models<sup id="fnref:deep" role="doc-noteref"><a href="#fn:deep" class="footnote">1</a></sup> have given us accurate predictions, especially with ever-growing training data, these models are poor at extrapolation and interpretation. These two properties are <em>especially</em> critical to understanding biological systems; measurements are essentially always data starved, and the complexities of biological systems are such that even our highest-throughput experiments do not comprehensively sample every possible intervention we could make<sup id="fnref:invivo" role="doc-noteref"><a href="#fn:invivo" class="footnote">2</a></sup>. In other words, we can take lots of pictures of stop signs to teach a model to identify stop signs, but we almost always build models of cells to predict things we can’t or haven’t ever measured yet. We have to be able to see into the uncharted territory. Can your model identify stop signs if it had never seen one before?</p>
 
 <p>So where does extrapolation come from? It comes from the inflexibility built into the model structure we choose. For example, ordinary least squares models are quite inflexible, and their inflexibility forces predictions where each variable extrapolates based on a linear relationship. Even flexible models, while restricted by the data within the training range, rely heavily on model <em>inflexibility</em> when extrapolating to entirely new predictions. However, the rigidity we encode to date has largely been tied to making a problem numerically tractable. For example, linear assumptions are often chosen because they gives us models that we can reasonably solve, but we don’t expect much of biology to be linear.</p>
 
@@ -145,13 +145,13 @@
 
 <p>If I had to guess where machine learning will take systems biology, it is in this direction, providing a balance of flexibility and rigidity. <a href="https://www.stochasticlifestyle.com/how-to-train-interpretable-neural-networks-that-accurately-extrapolate-from-small-data/">Neural ODEs</a> will lend themselves nicely to biology as a dynamic system where we have tools to measure dynamic responses and whether components interact. In fact, the authors summarize my point nicely: <strong><em>scientific knowledge [should be] encoded in structure, not data points</em></strong>. We will realize that the tools in our toolbox above are different views of the same solution, and learn how to encode our prior knowledge in model structure as well as parameters. Finally, I think we will re-focus our efforts on how <em>far</em> a model can extrapolate, rather than how accurately it can predict.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:deep">
-      <p>Call them deep if you must. <a href="#fnref:deep" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:deep" role="doc-endnote">
+      <p>Call them deep if you must. <a href="#fnref:deep" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:invivo">
-      <p>Sure, single-cell methods can provide enormous throughput, but we ultimately care about what happens in a whole organism, and often in a whole person. <a href="#fnref:invivo" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:invivo" role="doc-endnote">
+      <p>Sure, single-cell methods can provide enormous throughput, but we ultimately care about what happens in a whole organism, and often in a whole person. <a href="#fnref:invivo" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -197,17 +197,17 @@
 <ul>
   <li><em>Codify good practice.</em> When putting together large documents I find it challenging to maintain consistency. For example, I would like acronyms to be introduced once, subsequently used throughout, and included in the glossary. The <code class="highlighter-rouge">glossary</code> package can seamlessly handle this for me. I would like all citations to be of the <code class="highlighter-rouge">supercite</code> variety and so overload the <code class="highlighter-rouge">cite</code> command. Aims and tasks end up subtly edited throughout the process of writing and proofing, and so these phrases are defined in commands. Make the computer work for you.</li>
   <li><em>Ensure final tweaking steps will be seamless.</em> Inevitably, a few tweaks will be necessary to ensure the Specific Aims page is, in fact, a page, or that a figure isn’t hanging off the end of a page split. The main place where I adjust my practice in order to accomplish this is wrapping each figure into a command. That way, when I need to move a figure down, it’s just a single line making the trip.</li>
-  <li><em>Use git as your track changes.</em> A versioning system allows you to concentrate only on the document before you. What I’ve found works for me is to make commits roughly once a day, or when I hand the document to anyone else for proofing/approval. That way, I can continue to work on a document while someone else is looking through it, and when they provide edits I can instantly jump back to the point they saw. While folks in biology are most used to a Word document with track changes<sup id="fnref:trackfoot"><a href="#fn:trackfoot" class="footnote">1</a></sup>, I tell people they can provide me comments however they find most convenient, and many are most comfortable scribbling on a hard copy.</li>
+  <li><em>Use git as your track changes.</em> A versioning system allows you to concentrate only on the document before you. What I’ve found works for me is to make commits roughly once a day, or when I hand the document to anyone else for proofing/approval. That way, I can continue to work on a document while someone else is looking through it, and when they provide edits I can instantly jump back to the point they saw. While folks in biology are most used to a Word document with track changes<sup id="fnref:trackfoot" role="doc-noteref"><a href="#fn:trackfoot" class="footnote">1</a></sup>, I tell people they can provide me comments however they find most convenient, and many are most comfortable scribbling on a hard copy.</li>
   <li><em>Separate style and content.</em> A style file seems redundant since it all can just go in the preamble of a document but, at least for me, it helps to enforce that those are not settings I should be tweaking when trying to assemble the content.</li>
   <li><em>Respect your readers by being boring.</em> If the purpose of your document is to convey information as efficiently as possible, eschew complications that do not directly serve that purpose. Those font ligatures and bright colors aren’t going to help your reader if it distracts them from learning what you want to tell them.</li>
 </ul>
 
 <p>Obviously, these tips won’t make you have high-quality science to talk about, but have helped me streamline the process of getting that material onto a page without errors.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:trackfoot">
-      <p>I also find track changes very distracting, so versioning being handled in a separate tool is helpful. <a href="#fnref:trackfoot" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:trackfoot" role="doc-endnote">
+      <p>I also find track changes very distracting, so versioning being handled in a separate tool is helpful. <a href="#fnref:trackfoot" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
@@ -261,9 +261,9 @@ Information transmission through AXL. <em>Left)</em> Triple-negative breast carc
 </time>
     </div>
     <div class="col span_12">
-      <p>The work from the final portion of my Ph.D. thesis is <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00007-1">online today</a> in <a href="http://www.cell.com/cell-systems/home">Cell Systems</a>, a brand new journal from Cell Press. Though nascent, the journal has already published exciting studies on the <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00002-2">geospatial distribution of bacteria in cities</a>, <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00003-4">using CRISPR-Cas9 to rapidly engineer yeast metabolic pathways</a>, and <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00006-X">programming synthetic circuits in gut microbiota</a> <sup id="fnref:cellsys"><a href="#fn:cellsys" class="footnote">1</a></sup>.</p>
+      <p>The work from the final portion of my Ph.D. thesis is <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00007-1">online today</a> in <a href="http://www.cell.com/cell-systems/home">Cell Systems</a>, a brand new journal from Cell Press. Though nascent, the journal has already published exciting studies on the <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00002-2">geospatial distribution of bacteria in cities</a>, <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00003-4">using CRISPR-Cas9 to rapidly engineer yeast metabolic pathways</a>, and <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00006-X">programming synthetic circuits in gut microbiota</a> <sup id="fnref:cellsys" role="doc-noteref"><a href="#fn:cellsys" class="footnote">1</a></sup>.</p>
 
-<p>In it, we use differential equation modeling to understand how <a href="https://en.wikipedia.org/wiki/AXL_receptor_tyrosine_kinase">AXL</a> (and very likely the other TAM receptor tyrosine kinases) senses phosphatidylserine (PtdSer)-presenting debris, a long-understood core function of the family. This was by far the most challenging undertaking of my Ph.D.–from utilizing the computational techniques to carefully designing the experimental measurements at each stage. The experience has taught me an enormous amount about the purpose and power of systems biology<sup id="fnref:odefoot"><a href="#fn:odefoot" class="footnote">2</a></sup>.</p>
+<p>In it, we use differential equation modeling to understand how <a href="https://en.wikipedia.org/wiki/AXL_receptor_tyrosine_kinase">AXL</a> (and very likely the other TAM receptor tyrosine kinases) senses phosphatidylserine (PtdSer)-presenting debris, a long-understood core function of the family. This was by far the most challenging undertaking of my Ph.D.–from utilizing the computational techniques to carefully designing the experimental measurements at each stage. The experience has taught me an enormous amount about the purpose and power of systems biology<sup id="fnref:odefoot" role="doc-noteref"><a href="#fn:odefoot" class="footnote">2</a></sup>.</p>
 
 <p><a href="http://elifesciences.org/content/4/e07158">Shou et. al.</a> very recently described it best:</p>
 
@@ -275,18 +275,18 @@ Information transmission through AXL. <em>Left)</em> Triple-negative breast carc
 
 <p>In the case of TAM receptors, manipulation by the addition or removal of ligand, receptor, or PtdSer has produced many observations. Some seemingly conflict with the previous mental model of particular factors being simply “activating” or “repressive.” The new theory/model that we propose, while being more complex, is maximally simple for the phenomena we wish to explain. With this new model, we can see how the previous mental model could be misleading, as complex, nonlinear relationships exist with respect to the timescale of one’s assay and factors such as PtdSer. That isn’t to say it is correct–<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">it will always be wrong</a>. In the near term, while we model only one receptor, AXL, the other TAM receptors MerTK and Tyro3 have critical roles both in normal physiology and cancer, and our understanding of how these receptors are similar or different is just beginning to be assembled. As TAM-targeted therapies are developed and evaluated <em>in vivo</em>, these models will help us understand how they work and develop even better therapies.</p>
 
-<p>We need better methods at every step of this type of modeling, from construction and parameterization to understanding predictions<sup id="fnref:toolfoot"><a href="#fn:toolfoot" class="footnote">3</a></sup>. Biology is complex, and mechanistic models such as these quickly become intractable on larger scales. Our study introduces the additional complexity of spatial scale, which makes each step of the process, as well as the corresponding experimental techniques, considerably more challenging. In the long term, I believe spatial organization of signaling will prove to be a critical component of understanding many cellular processes. We are going to need systems techniques to understand them.</p>
+<p>We need better methods at every step of this type of modeling, from construction and parameterization to understanding predictions<sup id="fnref:toolfoot" role="doc-noteref"><a href="#fn:toolfoot" class="footnote">3</a></sup>. Biology is complex, and mechanistic models such as these quickly become intractable on larger scales. Our study introduces the additional complexity of spatial scale, which makes each step of the process, as well as the corresponding experimental techniques, considerably more challenging. In the long term, I believe spatial organization of signaling will prove to be a critical component of understanding many cellular processes. We are going to need systems techniques to understand them.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:cellsys">
-      <p>I am incredibly excited by this journal’s creation. Systems biology has lacked a true “home” even as it has matured into an established field, and I am enthusiastic this will be it. <a href="#fnref:cellsys" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:cellsys" role="doc-endnote">
+      <p>I am incredibly excited by this journal’s creation. Systems biology has lacked a true “home” even as it has matured into an established field, and I am enthusiastic this will be it. <a href="#fnref:cellsys" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:odefoot">
-      <p>Ironically, I had to be convinced that such a project would be challenging enough to be interesting. After all, we learned about ODE modeling in undergraduate classes, it’s been applied for decades, and I would only be considering two proteins! Surely in the era of big data, a few rate parameters could be thrown together in a weekend and output some simulations of receptor activation. And rather than simulate a phenomena, why not just measure it experimentally? <a href="#fnref:odefoot" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:odefoot" role="doc-endnote">
+      <p>Ironically, I had to be convinced that such a project would be challenging enough to be interesting. After all, we learned about ODE modeling in undergraduate classes, it’s been applied for decades, and I would only be considering two proteins! Surely in the era of big data, a few rate parameters could be thrown together in a weekend and output some simulations of receptor activation. And rather than simulate a phenomena, why not just measure it experimentally? <a href="#fnref:odefoot" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:toolfoot">
-      <p>Of course there are huge efforts to develop better tools for these purposes, but these remain difficult problems. Notable promising directions are rule-based models (such as <a href="http://bionetgen.org/index.php/Main_Page">BioNetGen</a>) and brave attempts to try and accelerate Markov Chain Monte Carlo (e.g. <a href="http://people.sc.fsu.edu/~jburkardt/f_src/dream/dream.html">DREAM</a>). Truly rigorous modeling still remains a challenge even for the computationally adept however. It would be wonderful to have a rule-based framework that handled rigorous parameterization, spatial modeling through <a href="https://en.wikipedia.org/wiki/Finite_difference">finite differences</a>, compile-time <a href="https://en.wikipedia.org/wiki/Detailed_balance">detailed balance</a>, and <a href="https://en.wikipedia.org/wiki/Automatic_differentiation">automatic differentiation</a> (since all of these systems are stiff of course), but such a tool would be a considerable computational undertaking. <a href="#fnref:toolfoot" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:toolfoot" role="doc-endnote">
+      <p>Of course there are huge efforts to develop better tools for these purposes, but these remain difficult problems. Notable promising directions are rule-based models (such as <a href="http://bionetgen.org/index.php/Main_Page">BioNetGen</a>) and brave attempts to try and accelerate Markov Chain Monte Carlo (e.g. <a href="http://dream.r-forge.r-project.org">DREAM</a>). Truly rigorous modeling still remains a challenge even for the computationally adept however. It would be wonderful to have a rule-based framework that handled rigorous parameterization, spatial modeling through <a href="https://en.wikipedia.org/wiki/Finite_difference">finite differences</a>, compile-time <a href="https://en.wikipedia.org/wiki/Detailed_balance">detailed balance</a>, and <a href="https://en.wikipedia.org/wiki/Automatic_differentiation">automatic differentiation</a> (since all of these systems are stiff of course), but such a tool would be a considerable computational undertaking. <a href="#fnref:toolfoot" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
