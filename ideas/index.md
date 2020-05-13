@@ -1,7 +1,7 @@
-
-
-
-# Ideas
+---
+layout: page
+title: Ideas
+---
 
 
 
