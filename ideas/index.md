@@ -3,7 +3,7 @@ layout: page
 title: Ideas
 ---
 
-It's almost cliché to say that ideas are cheap. However, it's also a oversimplification—ideas live in a specific moment and within that context can have enormous or negligible impact. Ideas also require implementation to have value.
+It's almost cliché to say that ideas are cheap. However, it's an oversimplification—ideas live in a specific moment and within that context can have enormous or negligible impact. Ideas must also be implemented to have value.
 
 I started keeping an idea notebook around 2015 to add some structure to the process of choosing new research directions. Almost everything I now work on once lived in this notebook, but the vast majority of ideas never make it out. I've decided to start collecting some of them here, sometimes with a short explanation of their history.
 
