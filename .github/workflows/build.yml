@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-16.04
     steps:
     - uses: actions/checkout@v2
+    - run: wget -P publications https://asmlab.org/publications/pubs_bib.html
+    - run: wget -P publications https://asmlab.org/publications/pub_build.html
 
     # Use GitHub Actions' cache to shorten build times and decrease load on servers
     - uses: actions/cache@v1
@@ -18,7 +20,8 @@ jobs:
           ${{ runner.os }}-gems-
 
     # Standard usage
-    - uses:  lemonarc/jekyll-action@1.0.0
+    - uses: lemonarc/jekyll-action@1.0.0
+    - run: echo "ameyer.me" > _site/CNAME
   
     - uses: chabad360/htmlproofer@master
       with:
