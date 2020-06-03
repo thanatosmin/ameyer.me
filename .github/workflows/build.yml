@@ -7,9 +7,20 @@ jobs:
   jekyll:
     runs-on: ubuntu-16.04
     steps:
-    - run: apt install ruby-full
-    - run: bundle install
-    - run: cd publications; wget https://asmlab.org/publications/pubs_bib.html
-    - run: cd publications; wget https://asmlab.org/publications/pub_build.html
-    - run: bundle exec jekyll build
-    - run: bundle exec htmlproofer --check-html --http-status-ignore "999,400" --assume-extension ./_site
+    - uses: actions/checkout@v2
+
+    # Use GitHub Actions' cache to shorten build times and decrease load on servers
+    - uses: actions/cache@v1
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+
+    # Standard usage
+    - uses:  lemonarc/jekyll-action@1.0.0
+  
+    - uses: chabad360/htmlproofer@master
+      with:
+        directory: "./_site"
+        arguments: --http-status-ignore "999,400"
