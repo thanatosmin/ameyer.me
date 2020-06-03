@@ -6,14 +6,14 @@
     <atom:link href="http://ameyer.me/feed.xml" rel="self" type="application/rss+xml" />
     <description>Personal site for Aaron Meyer.</description>
     <language>en-us</language>
-    <pubDate>Mon, 25 May 2020 20:33:39 -0700</pubDate>
-    <lastBuildDate>Mon, 25 May 2020 20:33:39 -0700</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2020 17:45:27 +0000</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2020 17:45:27 +0000</lastBuildDate>
 
     
       <item>
         <title>Folding our knowledge in with the data—where systems biology could be headed</title>
         <link>http://ameyer.me/science/2020/01/24/where-systems-biol-may-be-headed.html</link>
-        <pubDate>Fri, 24 Jan 2020 00:00:00 -0800</pubDate>
+        <pubDate>Fri, 24 Jan 2020 08:00:00 +0000</pubDate>
         <author>me@ameyer.me (Aaron Meyer)</author>
         <description>&lt;p&gt;Last year in our machine learning/data analysis class, we had a bit of extra time to take a step back and return why we were there in the first place. Regardless of the method, machine learning provides us a toolbox of functions with varying amounts of flexibility and rigidness. By applying a method, we get a space of functions:&lt;/p&gt;
 
@@ -62,7 +62,7 @@
       <item>
         <title>Linus Pauling on involvement in politics</title>
         <link>http://ameyer.me/politics/2017/03/14/pauling-politics.html</link>
-        <pubDate>Tue, 14 Mar 2017 04:00:00 -0700</pubDate>
+        <pubDate>Tue, 14 Mar 2017 11:00:00 +0000</pubDate>
         <author>me@ameyer.me (Aaron Meyer)</author>
         <description>&lt;p&gt;I have to admit I didn’t know Linus Pauling’s second Nobel was for the Peace Prize. In addition to his scientific pursuits, Pauling helped bring about the treaty banning tests of atomic explosives in the atmosphere. Though six decades ago, it seems eerily relevant to discussion about scientist’s role in politics today:&lt;/p&gt;
 
@@ -78,12 +78,12 @@
       <item>
         <title>An Approach (and Template) for Reproducible Proposal Writing</title>
         <link>http://ameyer.me/science/2017/01/16/proposal-writing.html</link>
-        <pubDate>Mon, 16 Jan 2017 08:00:00 -0800</pubDate>
+        <pubDate>Mon, 16 Jan 2017 16:00:00 +0000</pubDate>
         <author>me@ameyer.me (Aaron Meyer)</author>
         <description>&lt;p&gt;This past year came with a significant increase in the number and complexity of funding proposals I put together. The process has been a bit of a learning experience, particularly in how important organization can be to larger writing projects. While I think the standard approach is to fight with Word, I’ve taken the opportunity to try and adopt some software tools (including Latex and Git) to make the process a bit more reproducible and straightforward. A few lessons I’ve taken away from the year follow below; if you would like to replicate the workflow I apply, please take a look at the &lt;a href=&quot;https://github.com/thanatosmin/grant-template&quot;&gt;template I start from on Github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Codify good practice.&lt;/em&gt; When putting together large documents I find it challenging to maintain consistency. For example, I would like acronyms to be introduced once, subsequently used throughout, and included in the glossary. The &lt;code class=&quot;highlighter-rouge&quot;&gt;glossary&lt;/code&gt; package can seamlessly handle this for me. I would like all citations to be of the &lt;code class=&quot;highlighter-rouge&quot;&gt;supercite&lt;/code&gt; variety and so overload the &lt;code class=&quot;highlighter-rouge&quot;&gt;cite&lt;/code&gt; command. Aims and tasks end up subtly edited throughout the process of writing and proofing, and so these phrases are defined in commands. Make the computer work for you.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Codify good practice.&lt;/em&gt; When putting together large documents I find it challenging to maintain consistency. For example, I would like acronyms to be introduced once, subsequently used throughout, and included in the glossary. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;glossary&lt;/code&gt; package can seamlessly handle this for me. I would like all citations to be of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;supercite&lt;/code&gt; variety and so overload the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cite&lt;/code&gt; command. Aims and tasks end up subtly edited throughout the process of writing and proofing, and so these phrases are defined in commands. Make the computer work for you.&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Ensure final tweaking steps will be seamless.&lt;/em&gt; Inevitably, a few tweaks will be necessary to ensure the Specific Aims page is, in fact, a page, or that a figure isn’t hanging off the end of a page split. The main place where I adjust my practice in order to accomplish this is wrapping each figure into a command. That way, when I need to move a figure down, it’s just a single line making the trip.&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Use git as your track changes.&lt;/em&gt; A versioning system allows you to concentrate only on the document before you. What I’ve found works for me is to make commits roughly once a day, or when I hand the document to anyone else for proofing/approval. That way, I can continue to work on a document while someone else is looking through it, and when they provide edits I can instantly jump back to the point they saw. While folks in biology are most used to a Word document with track changes&lt;sup id=&quot;fnref:trackfoot&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:trackfoot&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, I tell people they can provide me comments however they find most convenient, and many are most comfortable scribbling on a hard copy.&lt;/li&gt;
   &lt;li&gt;&lt;em&gt;Separate style and content.&lt;/em&gt; A style file seems redundant since it all can just go in the preamble of a document but, at least for me, it helps to enforce that those are not settings I should be tweaking when trying to assemble the content.&lt;/li&gt;
@@ -106,7 +106,7 @@
       <item>
         <title>Decoding cancer cells' molecular communication using systems biology</title>
         <link>http://ameyer.me/science/2016/12/03/scilife-essay.html</link>
-        <pubDate>Sat, 03 Dec 2016 07:00:00 -0800</pubDate>
+        <pubDate>Sat, 03 Dec 2016 15:00:00 +0000</pubDate>
         <author>me@ameyer.me (Aaron Meyer)</author>
         <description>&lt;blockquote&gt;
   &lt;p&gt;An essay I wrote for a contest. I didn’t win, but this serves as (I hope) a nice summary of the questions we’re trying to answer particularly for any TAM-interested folks.&lt;/p&gt;
@@ -135,7 +135,7 @@ Information transmission through AXL. &lt;em&gt;Left)&lt;/em&gt; Triple-negative
       <item>
         <title>Author Post: On Why We Build Models</title>
         <link>http://ameyer.me/data/2015/07/16/Gas6ms.html</link>
-        <pubDate>Thu, 16 Jul 2015 01:15:00 -0700</pubDate>
+        <pubDate>Thu, 16 Jul 2015 08:15:00 +0000</pubDate>
         <author>me@ameyer.me (Aaron Meyer)</author>
         <description>&lt;p&gt;The work from the final portion of my Ph.D. thesis is &lt;a href=&quot;http://www.cell.com/cell-systems/abstract/S2405-4712(15)00007-1&quot;&gt;online today&lt;/a&gt; in &lt;a href=&quot;http://www.cell.com/cell-systems/home&quot;&gt;Cell Systems&lt;/a&gt;, a brand new journal from Cell Press. Though nascent, the journal has already published exciting studies on the &lt;a href=&quot;http://www.cell.com/cell-systems/abstract/S2405-4712(15)00002-2&quot;&gt;geospatial distribution of bacteria in cities&lt;/a&gt;, &lt;a href=&quot;http://www.cell.com/cell-systems/abstract/S2405-4712(15)00003-4&quot;&gt;using CRISPR-Cas9 to rapidly engineer yeast metabolic pathways&lt;/a&gt;, and &lt;a href=&quot;http://www.cell.com/cell-systems/abstract/S2405-4712(15)00006-X&quot;&gt;programming synthetic circuits in gut microbiota&lt;/a&gt; &lt;sup id=&quot;fnref:cellsys&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:cellsys&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 
@@ -173,7 +173,7 @@ Information transmission through AXL. &lt;em&gt;Left)&lt;/em&gt; Triple-negative
       <item>
         <title>Principal Components Explained Visually</title>
         <link>http://ameyer.me/data/2015/02/19/PCA.html</link>
-        <pubDate>Thu, 19 Feb 2015 00:15:00 -0800</pubDate>
+        <pubDate>Thu, 19 Feb 2015 08:15:00 +0000</pubDate>
         <author>me@ameyer.me (Aaron Meyer)</author>
         <description>&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Principal_component_analysis&quot;&gt;Principal components analysis&lt;/a&gt; is an essential tool when working with multidimensional data, yet it can be difficult to develop an intuitive understanding of what the method is doing. &lt;a href=&quot;http://setosa.io/ev/principal-component-analysis/&quot;&gt;This tool&lt;/a&gt; from &lt;a href=&quot;https://twitter.com/vicapow&quot;&gt;Victor Powell&lt;/a&gt; really helps picture the process, as it lets you push and pull points around and immediately see the effect on the data output.&lt;/p&gt;
 </description>
@@ -183,7 +183,7 @@ Information transmission through AXL. &lt;em&gt;Left)&lt;/em&gt; Triple-negative
       <item>
         <title>The Bad Luck of Improper Data Interpretation</title>
         <link>http://ameyer.me/science/2015/01/02/vogel.html</link>
-        <pubDate>Fri, 02 Jan 2015 04:32:00 -0800</pubDate>
+        <pubDate>Fri, 02 Jan 2015 12:32:00 +0000</pubDate>
         <author>me@ameyer.me (Aaron Meyer)</author>
         <description>&lt;p&gt;An &lt;a href=&quot;http://www.sciencemag.org/content/347/6217/78.full&quot;&gt;article&lt;/a&gt; and &lt;a href=&quot;http://www.sciencemag.org/content/347/6217/12.full&quot;&gt;news summary&lt;/a&gt; is out in &lt;a href=&quot;http://www.sciencemag.org&quot;&gt;Science&lt;/a&gt; this week with a bold claim: that two-thirds of all cancers are due to baseline mutagenesis intrinsic to cell division, and not environmental factors or genetics. This is based on observed correlation between the number of stem cell divisions and incidence of cancer in various tissues. Certainly, such a conclusion would have immense consequences—it would emphasize treatment strategies over those of prevention, and refocus efforts away from understanding environmental toxins. Sadly, this conclusion is based on a frightening variety of errors in interpretation and basic math.&lt;/p&gt;
 
@@ -201,7 +201,7 @@ Information transmission through AXL. &lt;em&gt;Left)&lt;/em&gt; Triple-negative
       <item>
         <title>Early Independence</title>
         <link>http://ameyer.me/science/2014/10/06/EIA.html</link>
-        <pubDate>Mon, 06 Oct 2014 06:32:00 -0700</pubDate>
+        <pubDate>Mon, 06 Oct 2014 13:32:00 +0000</pubDate>
         <author>me@ameyer.me (Aaron Meyer)</author>
         <description>&lt;p&gt;Science doesn’t simply happen when money is spent; it requires immense effort, creative ideas, and dedicated time from well-trained scientists. Many factors can threaten these other requirements, such as funding instability and the aging of scientists. The average age at which an investigator receives their first R01, the mainstay grant of biomedical research, &lt;a href=&quot;https://drugmonkey.scientopia.org/2012/02/14/updating-the-age-of-first-nih-r01-award-trends-flatlining/&quot;&gt;is now well into the mid-40’s&lt;/a&gt;. This drives many of the most talented individuals out of biomedical research, and curtails the benefit we as investors in biomedical research derive from those who remain, by limiting their ability to perform independent science during some of their most creative years.&lt;/p&gt;
 
