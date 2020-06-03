@@ -7,6 +7,7 @@ jobs:
   jekyll:
     runs-on: ubuntu-16.04
     steps:
+    - run: apt install ruby-full
     - run: bundle install
     - run: cd publications; wget https://asmlab.org/publications/pubs_bib.html
     - run: cd publications; wget https://asmlab.org/publications/pub_build.html
