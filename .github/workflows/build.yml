@@ -21,9 +21,10 @@ jobs:
 
     # Standard usage
     - uses: lemonarc/jekyll-action@1.0.0
-    - run: echo "ameyer.me" > /github/workspace/_site/CNAME
+    - run: ls
+    - run: echo "ameyer.me" > _site/CNAME
   
     - uses: chabad360/htmlproofer@master
       with:
-        directory: "/github/workspace/_site"
+        directory: "_site"
         arguments: --http-status-ignore "999,400"
