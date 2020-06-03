@@ -1,7 +1,9 @@
-name: Jekyll build
+name: Jekyll publish
 
 on:
-  push
+  push:
+    branches:
+      - master
     
 jobs:
   jekyll:
@@ -26,3 +28,10 @@ jobs:
       #  with:
       #    directory: "_site"
       #    arguments: --http-status-ignore "999,400"
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: _site # The folder the action should deploy.
