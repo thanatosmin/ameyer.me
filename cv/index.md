@@ -13,6 +13,12 @@ B.S., Bioengineering, University of California, Los Angeles
 
 ----------------------
 
+### Publications
+
+[Find these on my lab's wbsite.](https://asmlab.org/publications/)
+
+----------------------
+
 ### Research Experience
 
 <div class="span_2 right">2017 – Present</div>
