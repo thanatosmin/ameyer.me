@@ -1,17 +1,13 @@
 name: Jekyll publish
 
 on:
-  push:
-    branches:
-      - master
+  push
     
 jobs:
   jekyll:
     runs-on: ubuntu-16.04
     steps:
       - uses: actions/checkout@v2
-      - run: wget -P publications https://asmlab.org/publications/pubs_bib.html
-      - run: wget -P publications https://asmlab.org/publications/pub_build.html
 
       # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - uses: actions/cache@v1
@@ -30,6 +26,7 @@ jobs:
       #    arguments: --http-status-ignore "999,400"
 
       - name: Deploy 🚀
+        if: github.ref == 'refs/heads/master'
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
